@@ -1,9 +1,5 @@
 # Welcome to Comprehensive Rust 🦀
 
-[![Build workflow](https://img.shields.io/github/actions/workflow/status/google/comprehensive-rust/build.yml?style=flat-square)](https://github.com/google/comprehensive-rust/actions/workflows/build.yml?query=branch%3Amain)
-[![GitHub contributors](https://img.shields.io/github/contributors/google/comprehensive-rust?style=flat-square)](https://github.com/google/comprehensive-rust/graphs/contributors)
-[![GitHub stars](https://img.shields.io/github/stars/google/comprehensive-rust?style=flat-square)](https://github.com/google/comprehensive-rust/stargazers)
-
 This is a free Rust course developed by the Android team at Google. The course covers
 the full spectrum of Rust, from basic syntax to advanced topics like generics
 and error handling.
@@ -19,11 +15,6 @@ We call the first three course days Rust Fundamentals.
 
 Building on this, you're invited to dive into one or more specialized topics:
 
-* [Android](android.md): a half-day course on using Rust for Android platform
-  development (AOSP). This includes interoperability with C, C++, and Java.
-* [Bare-metal](bare-metal.md): a whole-day class on using Rust for bare-metal
-  (embedded) development. Both microcontrollers and application processors are
-  covered.
 * [Concurrency](concurrency.md): a whole-day class on concurrency in Rust. We
   cover both classical concurrency (preemptively scheduling using threads and
   mutexes) and async/await concurrency (cooperative multitasking using
