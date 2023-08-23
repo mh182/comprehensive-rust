@@ -24,8 +24,8 @@ struct Book {
 
 impl Book {
     // This is a constructor, used below.
-    fn new(title: &str, year: u16) -> Book {
-        Book {
+    fn new(title: &str, year: u16) -> Self {
+        Self {
             title: String::from(title),
             year,
         }
@@ -42,9 +42,9 @@ impl Library {
     // ANCHOR_END: setup
 
     // ANCHOR: Library_new
-    fn new() -> Library {
+    fn new() -> Self {
         // ANCHOR_END: Library_new
-        Library { books: Vec::new() }
+        Self { books: Vec::new() }
     }
 
     // ANCHOR: Library_len

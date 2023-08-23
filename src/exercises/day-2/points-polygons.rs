@@ -23,8 +23,8 @@ pub struct Point {
 // ANCHOR: Point-impl
 impl Point {
     // ANCHOR_END: Point-impl
-    pub fn new(x: i32, y: i32) -> Point {
-        Point { x, y }
+    pub fn new(x: i32, y: i32) -> Self {
+        Self { x, y }
     }
 
     pub fn magnitude(self) -> f64 {
@@ -67,8 +67,8 @@ pub struct Polygon {
 // ANCHOR: Polygon-impl
 impl Polygon {
     // ANCHOR_END: Polygon-impl
-    pub fn new() -> Polygon {
-        Polygon { points: Vec::new() }
+    pub fn new() -> Self {
+        Self { points: Vec::new() }
     }
 
     pub fn add_point(&mut self, point: Point) {
@@ -98,9 +98,9 @@ impl Polygon {
         result
         // Alternatively, Iterator::zip() lets us iterate over the points as pairs
         // but we need to pair each point with the next one, and the last point
-        // with the first point. The zip() iterator is finished as soon as one of 
+        // with the first point. The zip() iterator is finished as soon as one of
         // the source iterators is finished, a neat trick is to combine Iterator::cycle
-        // with Iterator::skip to create the second iterator for the zip and using map 
+        // with Iterator::skip to create the second iterator for the zip and using map
         // and sum to calculate the total length.
     }
 }
@@ -115,8 +115,8 @@ pub struct Circle {
 // ANCHOR: Circle-impl
 impl Circle {
     // ANCHOR_END: Circle-impl
-    pub fn new(center: Point, radius: i32) -> Circle {
-        Circle { center, radius }
+    pub fn new(center: Point, radius: i32) -> Self {
+        Self { center, radius }
     }
 
     pub fn circumference(&self) -> f64 {

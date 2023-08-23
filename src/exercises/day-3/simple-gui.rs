@@ -33,8 +33,8 @@ pub struct Label {
 }
 
 impl Label {
-    fn new(label: &str) -> Label {
-        Label {
+    fn new(label: &str) -> Self {
+        Self {
             label: label.to_owned(),
         }
     }
@@ -46,8 +46,8 @@ pub struct Button {
 }
 
 impl Button {
-    fn new(label: &str, callback: Box<dyn FnMut()>) -> Button {
-        Button {
+    fn new(label: &str, callback: Box<dyn FnMut()>) -> Self {
+        Self {
             label: Label::new(label),
             callback,
         }
@@ -60,8 +60,8 @@ pub struct Window {
 }
 
 impl Window {
-    fn new(title: &str) -> Window {
-        Window {
+    fn new(title: &str) -> Self {
+        Self {
             title: title.to_owned(),
             widgets: Vec::new(),
         }

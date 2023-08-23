@@ -16,7 +16,7 @@
 mod ffi {
     use std::os::raw::{c_char, c_int};
     #[cfg(not(target_os = "macos"))]
-    use std::os::raw::{c_long, c_ulong, c_ushort, c_uchar};
+    use std::os::raw::{c_long, c_uchar, c_ulong, c_ushort};
 
     // Opaque type. See https://doc.rust-lang.org/nomicon/ffi.html.
     #[repr(C)]
@@ -81,7 +81,7 @@ struct DirectoryIterator {
 
 // ANCHOR: DirectoryIterator
 impl DirectoryIterator {
-    fn new(path: &str) -> Result<DirectoryIterator, String> {
+    fn new(path: &str) -> Result<Self, String> {
         // Call opendir and return a Ok value if that worked,
         // otherwise return Err with a message.
         // ANCHOR_END: DirectoryIterator
@@ -91,7 +91,7 @@ impl DirectoryIterator {
         if dir.is_null() {
             Err(format!("Could not open {:?}", path))
         } else {
-            Ok(DirectoryIterator { path, dir })
+            Ok(Self { path, dir })
         }
     }
 }

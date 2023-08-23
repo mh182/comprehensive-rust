@@ -20,8 +20,8 @@ struct Node {
 }
 
 impl Node {
-    fn new(value: i64) -> Rc<RefCell<Node>> {
         Rc::new(RefCell::new(Node { value, ..Node::default() }))
+    fn new(value: i64) -> Rc<RefCell<Self>> {
     }
 
     fn sum(&self) -> i64 {
