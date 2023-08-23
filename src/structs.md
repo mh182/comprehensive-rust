@@ -20,7 +20,7 @@ fn main() {
     
     let jackie = Person {
         name: String::from("Jackie"),
-        ..peter
+        age: peter.age,
     };
     println!("{} is {} years old", jackie.name, jackie.age);
 }
@@ -37,6 +37,5 @@ Key Points:
 - This may be a good time to let people know there are different types of structs.
   - Zero-sized structs `e.g., struct Foo;` might be used when implementing a trait on some type but don’t have any data that you want to store in the value itself.
   - The next slide will introduce Tuple structs, used when the field names are not important.
-- The syntax `..peter` allows us to copy the majority of the fields from the old struct without having to explicitly type it all out. It must always be the last element.
 
 </details>

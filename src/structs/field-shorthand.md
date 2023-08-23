@@ -32,13 +32,14 @@ fn main() {
       name: String,
       age: u8,
   }
+
   impl Person {
       fn new(name: String, age: u8) -> Self {
           Self { name, age }
       }
   }
   ```
-- Implement the `Default` trait for the struct. Define some fields and use the default values for the other fields.
+- Implement the `Default` trait for the struct.
 
   ```rust,editable
   #[derive(Debug)]
@@ -46,22 +47,14 @@ fn main() {
       name: String,
       age: u8,
   }
+
   impl Default for Person {
-      fn default() -> Person {
-          Person {
+      fn default() -> Self {
+          Self {
               name: "Bot".to_string(),
               age: 0,
           }
       }
-  }
-  fn create_default() {
-      let tmp = Person {
-          ..Person::default()
-      };
-      let tmp = Person {
-          name: "Sam".to_string(),
-          ..Person::default()
-      };
   }
   ```
 
