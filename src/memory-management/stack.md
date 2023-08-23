@@ -25,26 +25,26 @@ fn main() {
 
 <details>
 
-* Mention that a `String` is backed by a `Vec`, so it has a capacity and length and can grow if mutable via reallocation on the heap.
+- Mention that a `String` is backed by a `Vec`, so it has a capacity and length and can grow if mutable via reallocation on the heap.
 
-* If students ask about it, you can mention that the underlying memory is heap allocated using the [System Allocator] and custom allocators can be implemented using the [Allocator API]
+- If students ask about it, you can mention that the underlying memory is heap allocated using the [System Allocator] and custom allocators can be implemented using the [Allocator API]
 
-* We can inspect the memory layout with `unsafe` code. However, you should point out that this is rightfully unsafe!
+- We can inspect the memory layout with `unsafe` code. However, you should point out that this is rightfully unsafe!
 
-    ```rust,editable
-    fn main() {
-        let mut s1 = String::from("Hello");
-        s1.push(' ');
-        s1.push_str("world");
-        // DON'T DO THIS AT HOME! For educational purposes only.
-        // String provides no guarantees about its layout, so this could lead to
-        // undefined behavior.
-        unsafe {
-            let (ptr, capacity, len): (usize, usize, usize) = std::mem::transmute(s1);
-            println!("ptr = {ptr:#x}, len = {len}, capacity = {capacity}");
-        }
-    }
-    ```
+  ```rust,editable
+  fn main() {
+      let mut s1 = String::from("Hello");
+      s1.push(' ');
+      s1.push_str("world");
+      // DON'T DO THIS AT HOME! For educational purposes only.
+      // String provides no guarantees about its layout, so this could lead to
+      // undefined behavior.
+      unsafe {
+          let (ptr, capacity, len): (usize, usize, usize) = std::mem::transmute(s1);
+          println!("ptr = {ptr:#x}, len = {len}, capacity = {capacity}");
+      }
+  }
+  ```
 
 </details>
 

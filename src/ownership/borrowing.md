@@ -19,13 +19,14 @@ fn main() {
 }
 ```
 
-* The `add` function _borrows_ two points and returns a new point.
-* The caller retains ownership of the inputs.
+- The `add` function _borrows_ two points and returns a new point.
+- The caller retains ownership of the inputs.
 
 <details>
 
 Notes on stack returns:
-* Demonstrate that the return from `add` is cheap because the compiler can eliminate the copy operation. Change the above code to print stack addresses and run it on the [Playground] or look at the assembly in [Godbolt](https://rust.godbolt.org/). In the "DEBUG" optimization level, the addresses should change, while they stay the same when changing to the "RELEASE" setting:
+
+- Demonstrate that the return from `add` is cheap because the compiler can eliminate the copy operation. Change the above code to print stack addresses and run it on the [Playground] or look at the assembly in [Godbolt](https://rust.godbolt.org/). In the "DEBUG" optimization level, the addresses should change, while they stay the same when changing to the "RELEASE" setting:
 
   ```rust,editable
   #[derive(Debug)]
@@ -45,8 +46,8 @@ Notes on stack returns:
       println!("{p1:?} + {p2:?} = {p3:?}");
   }
   ```
-* The Rust compiler can do return value optimization (RVO).
-* In C++, copy elision has to be defined in the language specification because constructors can have side effects. In Rust, this is not an issue at all. If RVO did not happen, Rust will always perform a simple and efficient `memcpy` copy.
+- The Rust compiler can do return value optimization (RVO).
+- In C++, copy elision has to be defined in the language specification because constructors can have side effects. In Rust, this is not an issue at all. If RVO did not happen, Rust will always perform a simple and efficient `memcpy` copy.
 
 </details>
 

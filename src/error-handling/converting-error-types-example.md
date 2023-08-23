@@ -49,8 +49,8 @@ fn main() {
 
 Key points:
 
-* The `username` variable can be either `Ok(string)` or `Err(error)`.
-* Use the `fs::write` call to test out the different scenarios: no file, empty file, file with username.
+- The `username` variable can be either `Ok(string)` or `Err(error)`.
+- Use the `fs::write` call to test out the different scenarios: no file, empty file, file with username.
 
 It is good practice for all error types that don't need to be `no_std` to implement `std::error::Error`, which requires `Debug` and `Display`. The `Error` crate for `core` is only available in [nightly](https://github.com/rust-lang/rust/issues/103765), so not fully `no_std` compatible yet.
 

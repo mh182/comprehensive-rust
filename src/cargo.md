@@ -13,15 +13,15 @@ This will give you the Cargo build tool (`cargo`) and the Rust compiler (`rustc`
 
 <details>
 
-* On Debian/Ubuntu, you can also install Cargo, the Rust source and the [Rust formatter][6] via `apt`. However, this gets you an outdated rust version and may lead to unexpected behavior. The command would be:
+- On Debian/Ubuntu, you can also install Cargo, the Rust source and the [Rust formatter][6] via `apt`. However, this gets you an outdated rust version and may lead to unexpected behavior. The command would be:
 
 ```shell
-    sudo apt install cargo rust-src rustfmt
+sudo apt install cargo rust-src rustfmt
 ```
 
-* We suggest using [VS Code][2] to edit the code (but any LSP compatible editor works with rust-analyzer[3]).
+- We suggest using [VS Code][2] to edit the code (but any LSP compatible editor works with rust-analyzer[3]).
 
-* Some folks also like to use the [JetBrains][4] family of IDEs, which do their own analysis but have their own tradeoffs. If you prefer them, you can install the [Rust Plugin][5]. Please take note that as of January 2023 debugging only works on the CLion version of the JetBrains IDEA suite.
+- Some folks also like to use the [JetBrains][4] family of IDEs, which do their own analysis but have their own tradeoffs. If you prefer them, you can install the [Rust Plugin][5]. Please take note that as of January 2023 debugging only works on the CLion version of the JetBrains IDEA suite.
 
 </details>
 

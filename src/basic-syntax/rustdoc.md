@@ -21,16 +21,16 @@ idiomatic to document all public items in an API using this pattern.
 
 <details>
 
-* Show students the generated docs for the `rand` crate at
+- Show students the generated docs for the `rand` crate at
   [`docs.rs/rand`](https://docs.rs/rand).
 
-* This course does not include rustdoc on slides, just to save space, but in
+- This course does not include rustdoc on slides, just to save space, but in
   real code they should be present.
 
-* Inner doc comments are discussed later (in the page on modules) and need not
+- Inner doc comments are discussed later (in the page on modules) and need not
   be addressed here.
 
-* Rustdoc comments can contain code snippets that we can run and test using `cargo test`.
+- Rustdoc comments can contain code snippets that we can run and test using `cargo test`.
   We will discuss these tests in the [Testing section](../testing/doc-tests.html).
 
 </details>

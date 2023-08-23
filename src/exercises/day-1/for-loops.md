@@ -70,23 +70,22 @@ Could you use `&[i32]` slices instead of hard-coded 3 × 3 matrices for your
 argument and return types? Something like `&[&[i32]]` for a two-dimensional
 slice-of-slices. Why or why not?
 
-
 See the [`ndarray` crate](https://docs.rs/ndarray/) for a production quality
 implementation.
 
 <details>
 
-The solution and the answer to the bonus section are available in the 
+The solution and the answer to the bonus section are available in the
 [Solution](solutions-morning.md#arrays-and-for-loops) section.
 
 The use of the reference `&array` within `for n in &array` is a subtle
 preview of issues of ownership that will come later in the afternoon.
 
 Without the `&`...
-* The loop would have been one that consumes the array.  This is a
-  change [introduced in the 2021
-  Edition](https://doc.rust-lang.org/edition-guide/rust-2021/IntoIterator-for-arrays.html), and ...
-* since the array is also accessed in the second loop, an implicit
+
+- The loop would have been one that consumes the array. This is a
+  change [introduced in the 2021 Edition](https://doc.rust-lang.org/edition-guide/rust-2021/IntoIterator-for-arrays.html), and ...
+- since the array is also accessed in the second loop, an implicit
   array copy would have occured; since `i32` is a copy type, then
   `[i32; 3]` is also a copy type.
 

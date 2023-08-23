@@ -65,48 +65,48 @@ async fn main() {
 
 <details>
 
-* You may recognize this as an example of the actor pattern. Actors
+- You may recognize this as an example of the actor pattern. Actors
   typically call `select!` in a loop.
 
-* This serves as a summation of a few of the previous lessons, so take your time
+- This serves as a summation of a few of the previous lessons, so take your time
   with it.
 
-    * Naively add a `_ = sleep(Duration::from_millis(100)) => { println!(..) }`
-      to the `select!`. This will never execute. Why?
+  - Naively add a `_ = sleep(Duration::from_millis(100)) => { println!(..) }`
+    to the `select!`. This will never execute. Why?
 
-    * Instead, add a `timeout_fut` containing that future outside of the `loop`:
+  - Instead, add a `timeout_fut` containing that future outside of the `loop`:
 
-        ```rust,compile_fail
-        let mut timeout_fut = sleep(Duration::from_millis(100));
-        loop {
-            select! {
-                ..,
-                _ = timeout_fut => { println!(..); },
-            }
+    ```rust,compile_fail
+    let mut timeout_fut = sleep(Duration::from_millis(100));
+    loop {
+        select! {
+            ..,
+            _ = timeout_fut => { println!(..); },
         }
-        ```
-    * This still doesn't work. Follow the compiler errors, adding `&mut` to the
-      `timeout_fut` in the `select!` to work around the move, then using
-      `Box::pin`:
+    }
+    ```
+  - This still doesn't work. Follow the compiler errors, adding `&mut` to the
+    `timeout_fut` in the `select!` to work around the move, then using
+    `Box::pin`:
 
-        ```rust,compile_fail
-        let mut timeout_fut = Box::pin(sleep(Duration::from_millis(100)));
-        loop {
-            select! {
-                ..,
-                _ = &mut timeout_fut => { println!(..); },
-            }
+    ```rust,compile_fail
+    let mut timeout_fut = Box::pin(sleep(Duration::from_millis(100)));
+    loop {
+        select! {
+            ..,
+            _ = &mut timeout_fut => { println!(..); },
         }
-        ```
+    }
+    ```
 
-    * This compiles, but once the timeout expires it is `Poll::Ready` on every
-      iteration (a fused future would help with this). Update to reset
-      `timeout_fut` every time it expires.
+  - This compiles, but once the timeout expires it is `Poll::Ready` on every
+    iteration (a fused future would help with this). Update to reset
+    `timeout_fut` every time it expires.
 
-* Box allocates on the heap. In some cases, `std::pin::pin!` (only recently
+- Box allocates on the heap. In some cases, `std::pin::pin!` (only recently
   stabilized, with older code often using `tokio::pin!`) is also an option, but
   that is difficult to use for a future that is reassigned.
 
-* Another alternative is to not use `pin` at all but spawn another task that will send to a `oneshot` channel every 100ms.
+- Another alternative is to not use `pin` at all but spawn another task that will send to a `oneshot` channel every 100ms.
 
 </details>

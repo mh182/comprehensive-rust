@@ -6,15 +6,15 @@ functions you would use from C to read the filenames of a directory.
 
 You will want to consult the manual pages:
 
-* [`opendir(3)`](https://man7.org/linux/man-pages/man3/opendir.3.html)
-* [`readdir(3)`](https://man7.org/linux/man-pages/man3/readdir.3.html)
-* [`closedir(3)`](https://man7.org/linux/man-pages/man3/closedir.3.html)
+- [`opendir(3)`](https://man7.org/linux/man-pages/man3/opendir.3.html)
+- [`readdir(3)`](https://man7.org/linux/man-pages/man3/readdir.3.html)
+- [`closedir(3)`](https://man7.org/linux/man-pages/man3/closedir.3.html)
 
 You will also want to browse the [`std::ffi`] module. There you find a number of
 string types which you need for the exercise:
 
 | Types                      | Encoding       | Use                            |
-|----------------------------|----------------|--------------------------------|
+| -------------------------- | -------------- | ------------------------------ |
 | [`str`] and [`String`]     | UTF-8          | Text processing in Rust        |
 | [`CStr`] and [`CString`]   | NUL-terminated | Communicating with C functions |
 | [`OsStr`] and [`OsString`] | OS-specific    | Communicating with the OS      |

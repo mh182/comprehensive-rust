@@ -30,12 +30,12 @@ fn main() {
 
 <details>
 
-* If `Box` was not used and we attempted to embed a `List` directly into the `List`,
-the compiler would not compute a fixed size of the struct in memory (`List` would be of infinite size).
+- If `Box` was not used and we attempted to embed a `List` directly into the `List`,
+  the compiler would not compute a fixed size of the struct in memory (`List` would be of infinite size).
 
-* `Box` solves this problem as it has the same size as a regular pointer and just points at the next
-element of the `List` in the heap.
+- `Box` solves this problem as it has the same size as a regular pointer and just points at the next
+  element of the `List` in the heap.
 
-* Remove the `Box` in the List definition and show the compiler error. "Recursive with indirection" is a hint you might want to use a Box or reference of some kind, instead of storing a value directly.   
-    
+- Remove the `Box` in the List definition and show the compiler error. "Recursive with indirection" is a hint you might want to use a Box or reference of some kind, instead of storing a value directly.
+
 </details>

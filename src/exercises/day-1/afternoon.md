@@ -2,9 +2,9 @@
 
 We will look at two things:
 
-* A small book library,
+- A small book library,
 
-* Iterators and ownership (hard).
+- Iterators and ownership (hard).
 
 <details>
 

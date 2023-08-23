@@ -2,7 +2,7 @@
 
 - If you want to exit a loop early, use [`break`](https://doc.rust-lang.org/reference/expressions/loop-expr.html#break-expressions),
 - If you want to immediately start
-the next iteration use [`continue`](https://doc.rust-lang.org/reference/expressions/loop-expr.html#continue-expressions).
+  the next iteration use [`continue`](https://doc.rust-lang.org/reference/expressions/loop-expr.html#continue-expressions).
 
 Both `continue` and `break` can optionally take a label argument which is used
 to break out of nested loops:

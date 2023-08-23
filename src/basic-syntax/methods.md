@@ -27,17 +27,17 @@ fn main() {
 }
 ```
 
-* We will look much more at methods in today's exercise and in tomorrow's class.
+- We will look much more at methods in today's exercise and in tomorrow's class.
 
 <details>
 
 - Add a static method called `Rectangle::new` and call this from `main`:
 
-    ```rust,editable,compile_fail
-    fn new(width: u32, height: u32) -> Rectangle {
-        Rectangle { width, height }
-    }
-    ```
+  ```rust,editable,compile_fail
+  fn new(width: u32, height: u32) -> Rectangle {
+      Rectangle { width, height }
+  }
+  ```
 
 - While _technically_, Rust does not have custom constructors, static methods are commonly used to initialize structs (but don't have to).
   The actual constructor, `Rectangle { width, height }`, could be called directly. See the [Rustnomicon](https://doc.rust-lang.org/nomicon/constructors.html).

@@ -46,18 +46,17 @@ async fn main() {
 }
 ```
 
-<details>  
+<details>
 
-* `async_trait` is easy to use, but note that it's using heap allocations to
+- `async_trait` is easy to use, but note that it's using heap allocations to
   achieve this. This heap allocation has performance overhead.
 
-* The challenges in language support for `async trait` are deep Rust and
+- The challenges in language support for `async trait` are deep Rust and
   probably not worth describing in-depth. Niko Matsakis did a good job of
-  explaining them in [this
-  post](https://smallcultfollowing.com/babysteps/blog/2019/10/26/async-fn-in-traits-are-hard/)
+  explaining them in [this post](https://smallcultfollowing.com/babysteps/blog/2019/10/26/async-fn-in-traits-are-hard/)
   if you are interested in digging deeper.
 
-* Try creating a new sleeper struct that will sleep for a random amount of time
+- Try creating a new sleeper struct that will sleep for a random amount of time
   and adding it to the Vec.
 
 </details>

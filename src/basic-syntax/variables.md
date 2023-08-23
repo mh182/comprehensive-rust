@@ -14,6 +14,6 @@ fn main() {
 
 <details>
 
-* Due to type inference the `i32` is optional. We will gradually show the types less and less as the course progresses.
+- Due to type inference the `i32` is optional. We will gradually show the types less and less as the course progresses.
 
 </details>

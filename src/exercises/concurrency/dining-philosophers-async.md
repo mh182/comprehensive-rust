@@ -44,7 +44,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-tokio = {version = "1.26.0", features = ["sync", "time", "macros", "rt-multi-thread"]}
+tokio = { version = "1.26.0", features = ["sync", "time", "macros", "rt-multi-thread"] }
 ```
 
 Also note that this time you have to use the `Mutex` and the `mpsc` module
@@ -52,6 +52,6 @@ from the `tokio` crate.
 
 <details>
 
-* Can you make your implementation single-threaded? 
+- Can you make your implementation single-threaded?
 
 </details>

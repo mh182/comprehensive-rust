@@ -25,11 +25,11 @@ fn main() {
 ```
 
 <details>
-  
-* That's why it is common to only implement `From`, as your type will get `Into` implementation too.
-* When declaring a function argument input type like "anything that can be converted into a `String`", the rule is opposite, you should use `Into`.
+
+- That's why it is common to only implement `From`, as your type will get `Into` implementation too.
+- When declaring a function argument input type like "anything that can be converted into a `String`", the rule is opposite, you should use `Into`.
   Your function will accept types that implement `From` and those that _only_ implement `Into`.
-    
+
 </details>
 
 [1]: https://doc.rust-lang.org/std/convert/trait.From.html

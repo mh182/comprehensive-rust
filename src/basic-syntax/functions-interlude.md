@@ -2,12 +2,12 @@
 
 Overloading is not supported:
 
-* Each function has a single implementation:
-  * Always takes a fixed number of parameters.
-  * Always takes a single set of parameter types.
-* Default values are not supported:
-  * All call sites have the same number of arguments.
-  * Macros are sometimes used as an alternative.
+- Each function has a single implementation:
+  - Always takes a fixed number of parameters.
+  - Always takes a single set of parameter types.
+- Default values are not supported:
+  - All call sites have the same number of arguments.
+  - Macros are sometimes used as an alternative.
 
 However, function parameters can be generic:
 
@@ -24,8 +24,7 @@ fn main() {
 
 <details>
 
-* When using generics, the standard library's `Into<T>` can provide a kind of limited
+- When using generics, the standard library's `Into<T>` can provide a kind of limited
   polymorphism on argument types. We will see more details in a later section.
 
 </details>
-

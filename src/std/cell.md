@@ -2,7 +2,7 @@
 
 [`Cell`](https://doc.rust-lang.org/std/cell/struct.Cell.html) and
 [`RefCell`](https://doc.rust-lang.org/std/cell/struct.RefCell.html) implement
-what Rust calls *interior mutability:* mutation of values in an immutable
+what Rust calls _interior mutability:_ mutation of values in an immutable
 context.
 
 `Cell` is typically used for simple types, as it requires copying or moving
@@ -44,9 +44,9 @@ fn main() {
 
 <details>
 
-* If we were using `Cell` instead of `RefCell` in this example, we would have to move the `Node` out of the `Rc` to push children, then move it back in. This is safe because there's always one, un-referenced value in the cell, but it's not ergonomic.
-* To do anything with a Node, you must call a `RefCell` method, usually `borrow` or `borrow_mut`.
-* Demonstrate that reference loops can be created by adding `root` to `subtree.children` (don't try to print it!).
-* To demonstrate a runtime panic, add a `fn inc(&mut self)` that increments `self.value` and calls the same method on its children. This will panic in the presence of the reference loop, with `thread 'main' panicked at 'already borrowed: BorrowMutError'`.
+- If we were using `Cell` instead of `RefCell` in this example, we would have to move the `Node` out of the `Rc` to push children, then move it back in. This is safe because there's always one, un-referenced value in the cell, but it's not ergonomic.
+- To do anything with a Node, you must call a `RefCell` method, usually `borrow` or `borrow_mut`.
+- Demonstrate that reference loops can be created by adding `root` to `subtree.children` (don't try to print it!).
+- To demonstrate a runtime panic, add a `fn inc(&mut self)` that increments `self.value` and calls the same method on its children. This will panic in the presence of the reference loop, with `thread 'main' panicked at 'already borrowed: BorrowMutError'`.
 
 </details>

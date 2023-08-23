@@ -7,28 +7,25 @@ and error handling.
 The goal of the course is to teach you Rust. We assume you don't know anything
 about Rust and hope to:
 
-* Give you a comprehensive understanding of the Rust syntax and language.
-* Enable you to modify existing programs and write new programs in Rust.
-* Show you common Rust idioms.
+- Give you a comprehensive understanding of the Rust syntax and language.
+- Enable you to modify existing programs and write new programs in Rust.
+- Show you common Rust idioms.
 
 We call the first three course days Rust Fundamentals.
 
 Building on this, you're invited to dive into one or more specialized topics:
 
-* [Concurrency](concurrency.md): a whole-day class on concurrency in Rust. We
+- [Concurrency](concurrency.md): a whole-day class on concurrency in Rust. We
   cover both classical concurrency (preemptively scheduling using threads and
   mutexes) and async/await concurrency (cooperative multitasking using
   futures).
-
 
 ## Non-Goals
 
 Rust is a large language and we won't be able to cover all of it in a few days.
 Some non-goals of this course are:
 
-* Learning how to develop macros: please see [Chapter 19.5 in the Rust
-  Book](https://doc.rust-lang.org/book/ch19-06-macros.html) and [Rust by
-  Example](https://doc.rust-lang.org/rust-by-example/macros.html) instead.
+- Learning how to develop macros: please see [Chapter 19.5 in the Rust Book](https://doc.rust-lang.org/book/ch19-06-macros.html) and [Rust by Example](https://doc.rust-lang.org/rust-by-example/macros.html) instead.
 
 ## Assumptions
 

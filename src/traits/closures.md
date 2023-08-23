@@ -49,6 +49,7 @@ depending on what the closure captures.
 
 By default, closures will capture by reference if they can. The `move` keyword makes them capture
 by value.
+
 ```rust,editable
 fn make_greeter(prefix: String) -> impl Fn(&str) {
     return move |name| println!("{} {}", prefix, name)

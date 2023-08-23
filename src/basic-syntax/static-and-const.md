@@ -1,7 +1,7 @@
 # Static and Constant Variables
 
 Static and constant variables are two different ways to create globally-scoped values that
-cannot be moved or reallocated during the execution of the program. 
+cannot be moved or reallocated during the execution of the program.
 
 ## `const`
 
@@ -42,7 +42,7 @@ fn main() {
 }
 ```
 
-As noted in the [Rust RFC Book][1], these are not inlined upon use and have an actual associated memory location.  This is useful for unsafe and 
+As noted in the [Rust RFC Book][1], these are not inlined upon use and have an actual associated memory location. This is useful for unsafe and
 embedded code, and the variable lives through the entirety of the program execution.
 When a globally-scoped value does not have a reason to need object identity, `const` is generally preferred.
 
@@ -54,22 +54,21 @@ access to them requires `unsafe` code. We will look at
 
 <details>
 
-* Mention that `const` behaves semantically similar to C++'s `constexpr`.
-* `static`, on the other hand, is much more similar to a `const` or mutable global variable in C++.
-* `static` provides object identity: an address in memory and state as required by types with interior mutability such as `Mutex<T>`.
-* It isn't super common that one would need a runtime evaluated constant, but it is helpful and safer than using a static.
-* `thread_local` data can be created with the macro `std::thread_local`.
+- Mention that `const` behaves semantically similar to C++'s `constexpr`.
+- `static`, on the other hand, is much more similar to a `const` or mutable global variable in C++.
+- `static` provides object identity: an address in memory and state as required by types with interior mutability such as `Mutex<T>`.
+- It isn't super common that one would need a runtime evaluated constant, but it is helpful and safer than using a static.
+- `thread_local` data can be created with the macro `std::thread_local`.
 
-### Properties table: 
+### Properties table:
 
-| Property | Static | Constant |
-|---|---|---|
-| Has an address in memory | Yes | No (inlined) |
-| Lives for the entire duration of the program | Yes | No |
-| Can be mutable | Yes (unsafe) | No |
-| Evaluated at compile time | Yes (initialised at compile time) | Yes |
-| Inlined wherever it is used | No | Yes |
-
+| Property                                     | Static                            | Constant     |
+| -------------------------------------------- | --------------------------------- | ------------ |
+| Has an address in memory                     | Yes                               | No (inlined) |
+| Lives for the entire duration of the program | Yes                               | No           |
+| Can be mutable                               | Yes (unsafe)                      | No           |
+| Evaluated at compile time                    | Yes (initialised at compile time) | Yes          |
+| Inlined wherever it is used                  | No                                | Yes          |
 
 </details>
 

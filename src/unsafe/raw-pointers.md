@@ -31,12 +31,12 @@ operations it is doing.
 In the case of pointer dereferences, this means that the pointers must be
 [_valid_](https://doc.rust-lang.org/std/ptr/index.html#safety), i.e.:
 
- * The pointer must be non-null.
- * The pointer must be _dereferenceable_ (within the bounds of a single allocated object).
- * The object must not have been deallocated.
- * There must not be concurrent accesses to the same location.
- * If the pointer was obtained by casting a reference, the underlying object must be live and no
-   reference may be used to access the memory.
+- The pointer must be non-null.
+- The pointer must be _dereferenceable_ (within the bounds of a single allocated object).
+- The object must not have been deallocated.
+- There must not be concurrent accesses to the same location.
+- If the pointer was obtained by casting a reference, the underlying object must be live and no
+  reference may be used to access the memory.
 
 In most cases the pointer must also be properly aligned.
 

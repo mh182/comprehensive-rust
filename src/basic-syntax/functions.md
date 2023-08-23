@@ -32,10 +32,10 @@ fn print_fizzbuzz_to(n: u32) {
 
 <details>
 
-* We refer in `main` to a function written below. Neither forward declarations nor headers are necessary. 
-* Declaration parameters are followed by a type (the reverse of some programming languages), then a return type.
-* The last expression in a function body (or any block) becomes the return value. Simply omit the `;` at the end of the expression.
-* Some functions have no return value, and return the 'unit type', `()`. The compiler will infer this if the `-> ()` return type is omitted.
-* The range expression in the `for` loop in `print_fizzbuzz_to()` contains `=n`, which causes it to include the upper bound.
+- We refer in `main` to a function written below. Neither forward declarations nor headers are necessary.
+- Declaration parameters are followed by a type (the reverse of some programming languages), then a return type.
+- The last expression in a function body (or any block) becomes the return value. Simply omit the `;` at the end of the expression.
+- Some functions have no return value, and return the 'unit type', `()`. The compiler will infer this if the `-> ()` return type is omitted.
+- The range expression in the `for` loop in `print_fizzbuzz_to()` contains `=n`, which causes it to include the upper bound.
 
 </details>

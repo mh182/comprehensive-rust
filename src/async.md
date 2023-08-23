@@ -16,10 +16,10 @@ available.
 
 ## Comparisons
 
- * Python has a similar model in its `asyncio`. However, its `Future` type is
-   callback-based, and not polled. Async Python programs require a "loop",
-   similar to a runtime in Rust.
+- Python has a similar model in its `asyncio`. However, its `Future` type is
+  callback-based, and not polled. Async Python programs require a "loop",
+  similar to a runtime in Rust.
 
- * JavaScript's `Promise` is similar, but again callback-based. The language
-   runtime implements the event loop, so many of the details of Promise
-   resolution are hidden.
+- JavaScript's `Promise` is similar, but again callback-based. The language
+  runtime implements the event loop, so many of the details of Promise
+  resolution are hidden.

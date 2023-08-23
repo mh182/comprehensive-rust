@@ -15,10 +15,7 @@ fn main() {
 <details>
 
 `Iterator` implements
-`fn collect<B>(self) -> B
-where
-    B: FromIterator<Self::Item>,
-    Self: Sized`
+`fn collect<B>(self) -> B where B: FromIterator<Self::Item>, Self: Sized`
 
 There are also implementations which let you do cool things like convert an
 `Iterator<Item = Result<V, E>>` into a `Result<Vec<V>, E>`.

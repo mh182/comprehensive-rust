@@ -30,21 +30,21 @@ inputs.
 
 Key points:
 
-* Explain that all variables are statically typed. Try removing `i32` to trigger
+- Explain that all variables are statically typed. Try removing `i32` to trigger
   type inference. Try with `i8` instead and trigger a runtime integer overflow.
 
-* Change `let mut x` to `let x`, discuss the compiler error.
+- Change `let mut x` to `let x`, discuss the compiler error.
 
-* Show how `print!` gives a compilation error if the arguments don't match the
+- Show how `print!` gives a compilation error if the arguments don't match the
   format string.
 
-* Show how you need to use `{}` as a placeholder if you want to print an
+- Show how you need to use `{}` as a placeholder if you want to print an
   expression which is more complex than just a single variable.
 
-* Show the students the standard library, show them how to search for `std::fmt`
+- Show the students the standard library, show them how to search for `std::fmt`
   which has the rules of the formatting mini-language. It's important that the
   students become familiar with searching in the standard library.
-    
-    * In a shell `rustup doc std::fmt` will open a browser on the local std::fmt documentation
+
+  - In a shell `rustup doc std::fmt` will open a browser on the local std::fmt documentation
 
 </details>

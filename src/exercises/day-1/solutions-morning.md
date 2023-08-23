@@ -7,6 +7,7 @@
 ```rust
 {{#include for-loops.rs}}
 ```
+
 ### Bonus question
 
 It requires more advanced concepts. It might seem that we could use a slice-of-slices (`&[&[i32]]`) as the input type to transpose and thus make our function handle any size of matrix. However, this quickly breaks down: the return type cannot be `&[&[i32]]` since it needs to own the data you return.

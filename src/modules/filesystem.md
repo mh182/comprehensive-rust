@@ -11,8 +11,8 @@ Similarly, a `garden::vegetables` module can be found at `src/garden/vegetables.
 
 The `crate` root is in:
 
-* `src/lib.rs` (for a library crate)
-* `src/main.rs` (for a binary crate)
+- `src/lib.rs` (for a library crate)
+- `src/main.rs` (for a binary crate)
 
 Modules defined in files can be documented, too, using "inner doc comments".
 These document the item that contains them -- in this case, a module.
@@ -34,12 +34,12 @@ pub fn harvest(garden: &mut Garden) { todo!() }
 
 <details>
 
-* Before Rust 2018, modules needed to be located at `module/mod.rs` instead of `module.rs`, and this is still a working alternative for editions after 2018.
+- Before Rust 2018, modules needed to be located at `module/mod.rs` instead of `module.rs`, and this is still a working alternative for editions after 2018.
 
-* The main reason to introduce `filename.rs` as alternative to `filename/mod.rs`
+- The main reason to introduce `filename.rs` as alternative to `filename/mod.rs`
   was because many files named `mod.rs` can be hard to distinguish in IDEs.
 
-* Deeper nesting can use folders, even if the main module is a file:
+- Deeper nesting can use folders, even if the main module is a file:
 
   ```ignore
   src/
@@ -49,7 +49,7 @@ pub fn harvest(garden: &mut Garden) { todo!() }
       └── sub_module.rs
   ```
 
-* The place rust will look for modules can be changed with a compiler directive:
+- The place rust will look for modules can be changed with a compiler directive:
 
   ```rust,ignore
   #[path = "some/path.rs"]

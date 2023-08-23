@@ -2,9 +2,9 @@
 
 How does Rust know to forbid shared access across thread? The answer is in two traits:
 
-* [`Send`][1]: a type `T` is `Send` if it is safe to move a `T` across a thread
+- [`Send`][1]: a type `T` is `Send` if it is safe to move a `T` across a thread
   boundary.
-* [`Sync`][2]: a type `T` is `Sync` if it is safe to move a `&T` across a thread
+- [`Sync`][2]: a type `T` is `Sync` if it is safe to move a `&T` across a thread
   boundary.
 
 `Send` and `Sync` are [unsafe traits][3]. The compiler will automatically derive them for your types
@@ -17,7 +17,7 @@ know it is valid.
 
 <details>
 
-* One can think of these traits as markers that the type has certain thread-safety properties.
-* They can be used in the generic constraints as normal traits.
-  
+- One can think of these traits as markers that the type has certain thread-safety properties.
+- They can be used in the generic constraints as normal traits.
+
 </details>
