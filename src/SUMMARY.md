@@ -29,6 +29,7 @@
   - [Slices](basic-syntax/slices.md)
     - [String vs str](basic-syntax/string-slices.md)
   - [Functions](basic-syntax/functions.md)
+    - [Early return](basic-syntax/early-return.md)
     - [Rustdoc](basic-syntax/rustdoc.md)
     - [Methods](basic-syntax/methods.md)
     - [Overloading](basic-syntax/functions-interlude.md)

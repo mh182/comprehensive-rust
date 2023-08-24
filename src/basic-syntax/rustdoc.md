@@ -24,11 +24,7 @@ idiomatic to document all public items in an API using this pattern.
 - Show students the generated docs for the `rand` crate at
   [`docs.rs/rand`](https://docs.rs/rand).
 
-- This course does not include rustdoc on slides, just to save space, but in
-  real code they should be present.
-
-- Inner doc comments are discussed later (in the page on modules) and need not
-  be addressed here.
+- This course does not include a lot of documentation on slides to save space. But real code should be documented!
 
 - Rustdoc comments can contain code snippets that we can run and test using `cargo test`.
   We will discuss these tests in the [Testing section](../testing/doc-tests.html).
