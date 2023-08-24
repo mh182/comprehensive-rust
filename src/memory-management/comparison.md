@@ -6,7 +6,7 @@ Here is a rough comparison of the memory management techniques.
 
 - Manual like C:
   - No runtime overhead.
-- Automatic like Java:
+- Garbage collected like Java:
   - Fully automatic.
   - Safe and correct.
 - Scope-based like C++:
@@ -23,7 +23,7 @@ Here is a rough comparison of the memory management techniques.
   - Use-after-free.
   - Double-frees.
   - Memory leaks.
-- Automatic like Java:
+- Garbage collected like Java:
   - Garbage collection pauses.
   - Destructor delays.
 - Scope-based like C++:

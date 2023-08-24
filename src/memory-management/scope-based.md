@@ -12,6 +12,7 @@ you smart pointers.
 ## C++ Example
 
 ```c++
+// C++ code, not Rust!
 void say_hello(std::unique_ptr<Person> person) {
   std::cout << "Hello " << person->name << std::endl;
 }

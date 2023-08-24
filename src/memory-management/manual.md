@@ -9,6 +9,7 @@ If not done with care, this can lead to crashes, bugs, security vulnerabilities,
 You must call `free` on every pointer you allocate with `malloc`:
 
 ```c
+// C code, not Rust!
 void foo(size_t n) {
     int* int_array = malloc(n * sizeof(int));
     //
