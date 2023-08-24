@@ -6,10 +6,11 @@ Book][1]. This should give you a working `rustc` and `cargo`. At the time of
 writing, the latest stable Rust release has these version numbers:
 
 ```shell
-% rustc --version
-rustc 1.69.0 (84c898d65 2023-04-16)
-% cargo --version
-cargo 1.69.0 (6e9a83356 2023-04-12)
+$ rustc --version
+rustc 1.72.0 (5680fa18f 2023-08-23)
+
+$ cargo --version
+cargo 1.72.0 (103a7ff2e 2023-08-15)
 ```
 
 You can use any later version too since Rust maintains backwards compatibility.
@@ -30,6 +31,7 @@ of the examples in this training:
 
    ```shell
    $ cd exercise
+
    $ cargo run
       Compiling exercise v0.1.0 (/home/mgeisler/tmp/exercise)
        Finished dev [unoptimized + debuginfo] target(s) in 0.75s
