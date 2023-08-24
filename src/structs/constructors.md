@@ -1,7 +1,6 @@
-# Field Shorthand Syntax
+# Constructors
 
-If you already have variables with the right names, then you can create the
-struct using a shorthand:
+You can have multiple constructors:
 
 ```rust,editable
 #[derive(Debug)]
@@ -12,19 +11,26 @@ struct Person {
 
 impl Person {
     fn new(name: String, age: u8) -> Person {
+        // You could do some input processing and validation here.
+
         Person { name, age }
+    }
+
+    fn bot(name: String) -> Person {
+        Person { name, age: 0 }
     }
 }
 
 fn main() {
     let peter = Person::new(String::from("Peter"), 27);
+
     println!("{peter:?}");
 }
 ```
 
 <details>
 
-- The `new` function could be written using `Self` as a type, as it is interchangeable with the struct type name
+- The functions `new` and `bot` could be written using `Self` as a type, as it is interchangeable with the struct type name
 
   ```rust,editable
   #[derive(Debug)]
@@ -58,8 +64,6 @@ fn main() {
   }
   ```
 
-- Methods are defined in the `impl` block.
-- Use struct update syntax to define a new structure using `peter`. Note that the variable `peter` will no longer be accessible afterwards.
-- Use `{:#?}` when printing structs to request the `Debug` representation.
+- Use `{:#?}` when printing structs to request the **pretty-printed** `Debug` representation.
 
 </details>
