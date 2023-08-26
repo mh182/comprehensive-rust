@@ -34,8 +34,6 @@
     - [Methods](basic-syntax/methods.md)
     - [Overloading](basic-syntax/functions-interlude.md)
 - [Exercises](exercises/day-1/morning.md)
-  - [Implicit Conversions](exercises/day-1/implicit-conversions.md)
-  - [Arrays and for Loops](exercises/day-1/for-loops.md)
 
 # Day 1: Afternoon
 
@@ -63,8 +61,6 @@
   - [Lifetimes in Function Calls](ownership/lifetimes-function-calls.md)
   - [Lifetimes in Data Structures](ownership/lifetimes-data-structures.md)
 - [Exercises](exercises/day-1/afternoon.md)
-  - [Storing Books](exercises/day-1/book-library.md)
-  - [Iterators and Ownership](exercises/day-1/iterators-and-ownership.md)
 
 # Day 2: Morning
 
@@ -225,17 +221,3 @@
 - [Thanks!](thanks.md)
 - [Other Resources](other-resources.md)
 - [Credits](credits.md)
-
-# Solutions
-
----
-
-- [Solutions](exercises/solutions.md)
-  - [Day 1 Morning](exercises/day-1/solutions-morning.md)
-  - [Day 1 Afternoon](exercises/day-1/solutions-afternoon.md)
-  - [Day 2 Morning](exercises/day-2/solutions-morning.md)
-  - [Day 2 Afternoon](exercises/day-2/solutions-afternoon.md)
-  - [Day 3 Morning](exercises/day-3/solutions-morning.md)
-  - [Day 3 Afternoon](exercises/day-3/solutions-afternoon.md)
-  - [Concurrency Morning](exercises/concurrency/solutions-morning.md)
-  - [Concurrency Afternoon](exercises/concurrency/solutions-afternoon.md)
