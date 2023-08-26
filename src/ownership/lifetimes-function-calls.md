@@ -13,8 +13,8 @@ fn left_most<'a>(p1: &'a Point, p2: &'a Point) -> &'a Point {
 fn main() {
     let p1: Point = Point(10, 10);
     let p2: Point = Point(20, 20);
-    let p3: &Point = left_most(&p1, &p2);
-    println!("left-most point: {:?}", p3);
+    let p_ref: &Point = left_most(&p1, &p2);
+    println!("left-most point: {:?}", p_ref);
 }
 ```
 
@@ -28,7 +28,7 @@ fn main() {
 
 In the above example, try the following:
 
-- Move the declaration of `p2` and `p3` into a new scope (`{ ... }`), resulting in the following code:
+- Move the declaration of `p2` and `p_ref` into a new scope (`{ ... }`), resulting in the following code:
   ```rust,ignore
   #[derive(Debug)]
   struct Point(i32, i32);
@@ -39,15 +39,15 @@ In the above example, try the following:
 
   fn main() {
       let p1: Point = Point(10, 10);
-      let p3: &Point;
+      let p_ref: &Point;
       {
           let p2: Point = Point(20, 20);
-          p3 = left_most(&p1, &p2);
+          p_ref = left_most(&p1, &p2);
       }
-      println!("left-most point: {:?}", p3);
+      println!("left-most point: {:?}", p_ref);
   }
   ```
-  Note how this does not compile since `p3` outlives `p2`.
+  Note how this does not compile since `p_ref` outlives `p2`.
 
 - Reset the workspace and change the function signature to `fn left_most<'a, 'b>(p1: &'a Point, p2: &'a Point) -> &'b Point`. This will not compile because the relationship between the lifetimes `'a` and `'b` is unclear.
 - Another way to explain it:

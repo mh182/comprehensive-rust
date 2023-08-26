@@ -4,14 +4,13 @@ All variable bindings have a _scope_ where they are valid and it is an error to
 use a variable outside its scope:
 
 ```rust,editable,compile_fail
-struct Point(i32, i32);
-
 fn main() {
     {
-        let p = Point(3, 4);
-        println!("x: {}", p.0);
+        let x = 42;
+        println!("x: {x}");
     }
-    println!("y: {}", p.1);
+
+    println!("x: {x}");
 }
 ```
 

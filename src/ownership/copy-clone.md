@@ -6,6 +6,7 @@ While move semantics are the default, certain types are copied by default:
 fn main() {
     let x = 42;
     let y = x;
+
     println!("x: {x}");
     println!("y: {y}");
 }
@@ -22,6 +23,7 @@ struct Point(i32, i32);
 fn main() {
     let p1 = Point(3, 4);
     let p2 = p1;
+
     println!("p1: {p1:?}");
     println!("p2: {p2:?}");
 }
