@@ -29,6 +29,3 @@ level = 0
 [output.html.playground]
 editable = true
 line-numbers = true
-
-[output.exerciser]
-output-directory = "comprehensive-rust-exercises"

@@ -1,8 +1,0 @@
-[workspace]
-members = [
-  "mdbook-exerciser",
-  "src/exercises",
-  "src/bare-metal/useful-crates/allocator-example",
-  "src/bare-metal/useful-crates/zerocopy-example",
-  "src/exercises/concurrency/chat-async",
-]
