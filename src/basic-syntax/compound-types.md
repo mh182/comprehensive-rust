@@ -25,6 +25,16 @@ fn main() {
 }
 ```
 
+Tuple destructuring:
+
+```rust,editable
+fn main() {
+    let meal = ("Falafel", 4.5);
+    let (name, price) = meal;
+    println!("{name} costs {price}€");
+}
+```
+
 <details>
 
 Key points:
