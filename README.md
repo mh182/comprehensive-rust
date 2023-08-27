@@ -1,15 +1,13 @@
-**This repository is forked from [Comprehensive Rust by Google](https://github.com/google/comprehensive-rust).**
+**This repository is forked from [Comprehensive Rust by Google](https://github.com/google/comprehensive-rust) for my Rust course. Many thanks to the original authors 🥰**
 
 # Comprehensive Rust 🦀
 
 This repository has the source code for Comprehensive Rust 🦀, a multi-day Rust
 course developed by the Android team. The course covers all aspects of Rust,
 from basic syntax to generics and error handling. It also includes deep dives on
-[concurrency].
+concurrency.
 
-[concurrency]: https://google.github.io/comprehensive-rust/concurrency.html
-
-Read the course at **https://google.github.io/comprehensive-rust/**.
+Read the course at **https://comprehensive-rust.mo8it.com**.
 
 ## Course Format and Target Audience
 
@@ -53,5 +51,4 @@ mdbook serve
 
 to start a web server with the course. You'll find the content on
 <http://localhost:3000>. You can use `mdbook build` to create a static version
-of the course in the `book/` directory. Note that you have to separately build
-and zip exercises and add them to `book/html`.
+of the course in the `book/` directory.

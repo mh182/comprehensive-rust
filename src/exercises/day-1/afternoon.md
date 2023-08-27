@@ -1,5 +1,7 @@
 # Day 1: Afternoon Exercises
 
+You should do following exercises:
+
 - `variables5`
 - `variables6`
 - `move_semantics1`

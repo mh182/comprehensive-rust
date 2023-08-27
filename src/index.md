@@ -1,8 +1,6 @@
 # Welcome to Comprehensive Rust 🦀
 
-This is a free Rust course developed by the Android team at Google. The course covers
-the full spectrum of Rust, from basic syntax to advanced topics like generics
-and error handling.
+This Rust course covers the full spectrum of Rust, from basic syntax to advanced topics like generics and error handling.
 
 The goal of the course is to teach you Rust. We assume you don't know anything
 about Rust and hope to:
@@ -13,19 +11,28 @@ about Rust and hope to:
 
 We call the first three course days Rust Fundamentals.
 
-Building on this, you're invited to dive into one or more specialized topics:
+Building on this, we will dive into a whole day on concurrency in Rust.
+We cover both classical concurrency (preemptively scheduling using threads and
+mutexes) and async/await concurrency (cooperative multitasking using
+futures).
 
-- [Concurrency](concurrency.md): a whole-day class on concurrency in Rust. We
-  cover both classical concurrency (preemptively scheduling using threads and
-  mutexes) and async/await concurrency (cooperative multitasking using
-  futures).
+On the last day, we will learn how to use Rust to run a [web server](https://mo8it.com/blog/getting-started-with-rust-backends/).
+You will also vote for a topic on the first day to be covered in the last day.
+Possible topics are:
 
-## Non-Goals
+- Graphical user interfaces (GUI) using [`egui`](https://www.egui.rs/)
+- Command line interfaces (CLI) using [`clap`](https://docs.rs/clap/latest/clap/)
+- Terminal user interafaces (TUI) using [`ratatui`](https://github.com/ratatui-org/ratatui)
+- Your suggestion!
+
+## Disclaimer
 
 Rust is a large language and we won't be able to cover all of it in a few days.
-Some non-goals of this course are:
 
-- Learning how to develop macros: please see [Chapter 19.5 in the Rust Book](https://doc.rust-lang.org/book/ch19-06-macros.html) and [Rust by Example](https://doc.rust-lang.org/rust-by-example/macros.html) instead.
+You will not be a Rust expert at the end of the course, but you will be familiar with Rust's basics.
+
+Attending this course is not an alternative to reading [the official Rust book](https://doc.rust-lang.org/stable/book/).
+You should read the book if you seek a deeper understanding of Rust after this course.
 
 ## Assumptions
 
@@ -35,6 +42,13 @@ explain or contrast the Rust approach.
 
 If you know how to program in a dynamically-typed language such as Python or
 JavaScript, then you will be able to follow along just fine too.
+
+## Credits
+
+This script is **forked from the original [Comprehensive Rust](https://google.github.io/comprehensive-rust/) course** which is developed by the Android team at Google.
+Many thanks to the original authors 🥰
+
+[More credits](credits.md)
 
 <details>
 
