@@ -62,6 +62,7 @@
   - [Lifetimes in Data Structures](ownership/lifetimes-data-structures.md)
 - [Exercises](exercises/day-1/afternoon.md)
 
+<!--
 # Day 2: Morning
 
 ---
@@ -213,6 +214,7 @@
 - [Exercises](exercises/concurrency/afternoon.md)
   - [Dining Philosophers](exercises/concurrency/dining-philosophers-async.md)
   - [Broadcast Chat Application](exercises/concurrency/chat-app.md)
+-->
 
 # Final Words
 
