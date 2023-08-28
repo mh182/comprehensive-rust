@@ -1,6 +1,6 @@
 # Day 1: Afternoon Exercises
 
-You should do following exercises:
+You should do following Rustlings exercises:
 
 - `variables5`
 - `variables6`

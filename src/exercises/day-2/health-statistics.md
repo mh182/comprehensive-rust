@@ -1,5 +1,8 @@
 # Health Statistics
 
+> Try this exercise **only if you have time left**.
+> The Rustlings exercises are more important!
+
 {{#include ../../../third_party/rust-on-exercism/health-statistics.md}}
 
 Copy the code below to <https://play.rust-lang.org/> and fill in the missing
