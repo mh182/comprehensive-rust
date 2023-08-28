@@ -62,7 +62,6 @@
   - [Lifetimes in Data Structures](ownership/lifetimes-data-structures.md)
 - [Exercises](exercises/day-1/afternoon.md)
 
-<!--
 # Day 2: Morning
 
 ---
@@ -73,7 +72,6 @@
   - [Constructors](structs/constructors.md)
 - [Enums](enums.md)
   - [Variant Payloads](enums/variant-payloads.md)
-  - [Enum Sizes](enums/sizes.md)
 - [Methods](methods.md)
   - [Method Receiver](methods/receiver.md)
   - [Example](methods/example.md)
@@ -116,6 +114,7 @@
   - [Luhn Algorithm](exercises/day-2/luhn.md)
   - [Strings and Iterators](exercises/day-2/strings-iterators.md)
 
+<!--
 # Day 3: Morning
 
 ---
