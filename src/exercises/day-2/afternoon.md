@@ -1,31 +1,17 @@
-# Day 2: Afternoon Exercises
+# Day 3: Afternoon Exercises
 
 You should do the following Rustlings exercises:
 
-- `if1`
-- `if2`
-- `if3`
-- `quiz1`
-- `vecs1`
-- `vecs2`
-- `strings1`
-- `strings2`
-- `strings3`
-- `strings4`
-- `modules1`
-- `modules2`
-- `modules3`
-- `hashmaps1`
-- `hashmaps2`
-- `hashmaps3`
-- `quiz2`
-- `options1`
-- `options2`
-- `options3`
+- `structs1`
+- `structs2`
+- `structs3`
+- `enums1`
+- `enums2`
+- `enums3`
 
 ---
 
 **Only if you have time left**, you can try working on the following two exercises about implementing methods in two contexts:
 
-- [Luhn Algorithm](luhn.md)
-- [Strings and iterators](strings-iterators.md)
+- [Simple struct which tracks health statistics](health-statistics.md)
+- [Multiple structs and enums for a drawing library](points-polygons.md)

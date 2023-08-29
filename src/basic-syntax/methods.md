@@ -28,4 +28,4 @@ fn main() {
 }
 ```
 
-We will learn more about structs and methods in the next day.
+We will learn more about structs and methods later.

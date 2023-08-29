@@ -13,8 +13,7 @@
 
 ---
 
-- [Welcome](welcome-day-1.md)
-  - [What is Rust?](welcome-day-1/what-is-rust.md)
+- [What is Rust?](what-is-rust.md)
 - [Hello World!](hello-world.md)
   - [Small Example](hello-world/small-example.md)
 - [Why Rust?](why-rust.md)
@@ -49,6 +48,11 @@
   - [Garbage Collection](memory-management/garbage-collection.md)
   - [Rust Memory Management](memory-management/rust.md)
   - [Comparison](memory-management/comparison.md)
+
+# Day 2: Morning
+
+---
+
 - [Ownership](ownership.md)
   - [Move Semantics](ownership/move-semantics.md)
   - [Moved Strings in Rust](ownership/moved-strings-rust.md)
@@ -60,13 +64,10 @@
   - [Lifetimes](ownership/lifetimes.md)
   - [Lifetimes in Function Calls](ownership/lifetimes-function-calls.md)
   - [Lifetimes in Data Structures](ownership/lifetimes-data-structures.md)
-- [Exercises](exercises/day-1/afternoon.md)
+- [Exercises](exercises/day-2/morning.md)
 
-# Day 2: Morning
+# Day 2: Afternoon
 
----
-
-- [Welcome](welcome-day-2.md)
 - [Structs](structs.md)
   - [Tuple Structs](structs/tuple-structs.md)
   - [Constructors](structs/constructors.md)
@@ -80,11 +81,13 @@
   - [Destructuring Structs](pattern-matching/destructuring-structs.md)
   - [Destructuring Arrays](pattern-matching/destructuring-arrays.md)
   - [Match Guards](pattern-matching/match-guards.md)
-- [Exercises](exercises/day-2/morning.md)
+- [Exercises](exercises/day-2/afternoon.md)
   - [Health Statistics](exercises/day-2/health-statistics.md)
   - [Points and Polygons](exercises/day-2/points-polygons.md)
 
-# Day 2: Afternoon
+# Day 3: Morning
+
+---
 
 - [Control Flow](control-flow.md)
   - [Blocks](control-flow/blocks.md)
@@ -109,16 +112,12 @@
   - [Visibility](modules/visibility.md)
   - [Paths](modules/paths.md)
   - [Filesystem Hierarchy](modules/filesystem.md)
-- [Exercises](exercises/day-2/afternoon.md)
-  - [Luhn Algorithm](exercises/day-2/luhn.md)
-  - [Strings and Iterators](exercises/day-2/strings-iterators.md)
+- [Exercises](exercises/day-3/morning.md)
+  - [Luhn Algorithm](exercises/day-3/luhn.md)
+  - [Strings and Iterators](exercises/day-3/strings-iterators.md)
 
-<!--
-# Day 3: Morning
+# Day 3: Afternoon
 
----
-
-- [Welcome](welcome-day-3.md)
 - [Generics](generics.md)
   - [Generic Data Types](generics/data-types.md)
   - [Generic Methods](generics/methods.md)
@@ -138,10 +137,13 @@
   - [Default](traits/default.md)
   - [Operators: Add, Mul, ...](traits/operators.md)
   - [Closures: Fn, FnMut, FnOnce](traits/closures.md)
-- [Exercises](exercises/day-3/morning.md)
+- [Exercises](exercises/day-3/afternoon.md)
   - [A Simple GUI Library](exercises/day-3/simple-gui.md)
 
-# Day 3: Afternoon
+<!--
+# Day 4: Morning
+
+---
 
 - [Error Handling](error-handling.md)
   - [Panics](error-handling/panics.md)
@@ -167,12 +169,9 @@
     - [Writing Unsafe Functions](unsafe/writing-unsafe-functions.md)
     - [Extern Functions](unsafe/extern-functions.md)
   - [Implementing Unsafe Traits](unsafe/unsafe-traits.md)
-- [Exercises](exercises/day-3/afternoon.md)
-  - [Safe FFI Wrapper](exercises/day-3/safe-ffi-wrapper.md)
+- [Exercises](exercises/day-4/morning.md)
 
-# Concurrency: Morning
-
----
+# Day 4: Afternoon
 
 - [Welcome](concurrency.md)
 - [Threads](concurrency/threads.md)
@@ -192,7 +191,9 @@
   - [Dining Philosophers](exercises/concurrency/dining-philosophers.md)
   - [Multi-threaded Link Checker](exercises/concurrency/link-checker.md)
 
-# Concurrency: Afternoon
+# Day 5: Morning
+
+---
 
 - [Async Basics](async.md)
   - [async/await](async/async-await.md)
