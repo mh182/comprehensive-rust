@@ -27,6 +27,8 @@ fn main() {
     } else {
         3 * x + 1
     };
+
+    println!("{x}");
 }
 ```
 
