@@ -1,5 +1,8 @@
 # Strings and Iterators
 
+> Try this exercise **only if you have time left**.
+> The Rustlings exercises are more important!
+
 In this exercise, you are implementing a routing component of a web server. The
 server is configured with a number of _path prefixes_ which are matched against
 _request paths_. The path prefixes can contain a wildcard character which

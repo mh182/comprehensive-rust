@@ -1,11 +1,31 @@
 # Day 2: Afternoon Exercises
 
-The exercises for this afternoon will focus on strings and iterators.
+You should do the following Rustlings exercises:
 
-<details>
+- `if1`
+- `if2`
+- `if3`
+- `quiz1`
+- `vecs1`
+- `vecs2`
+- `strings1`
+- `strings2`
+- `strings3`
+- `strings4`
+- `modules1`
+- `modules2`
+- `modules3`
+- `hashmaps1`
+- `hashmaps2`
+- `hashmaps3`
+- `quiz2`
+- `options1`
+- `options2`
+- `options3`
 
-After looking at the exercises, you can look at the [solutions] provided.
+---
 
-[solutions]: solutions-afternoon.md
+**Only if you have time left**, you can try working on the following two exercises about implementing methods in two contexts:
 
-</details>
+- [Luhn Algorithm](luhn.md)
+- [Strings and iterators](strings-iterators.md)
