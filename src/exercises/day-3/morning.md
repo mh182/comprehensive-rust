@@ -8,22 +8,22 @@ You should do the following Rustlings exercises:
 - `if2`
 - `if3`
 - `quiz1`
+- `options1`
+- `options2`
+- `options3`
 - `vecs1`
 - `vecs2`
 - `strings1`
 - `strings2`
 - `strings3`
 - `strings4`
-- `modules1`
-- `modules2`
-- `modules3`
 - `hashmaps1`
 - `hashmaps2`
 - `hashmaps3`
+- `modules1`
+- `modules2`
+- `modules3`
 - `quiz2`
-- `options1`
-- `options2`
-- `options3`
 
 ---
 
