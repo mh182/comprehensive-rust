@@ -1,6 +1,6 @@
 # Day 2: Morning Exercises
 
-> **⚠️ Before starting with the exercises: Run the command `git pull -r` in the directory `collective-rustlings` to get the updated tasks for this day!**
+> **⚠️ Before starting with the exercises: Run the command `git pull` in the directory `collective-rustlings` to get the updated tasks for this day!**
 
 **In case you didn't finish the exercises from yesterday**, you will not be able to do today's exercises with `rustlings watch`.
 In that case, you have to use the command `rustlings run EXERCISE_NAME` where the exercise name is one of those listed below.
