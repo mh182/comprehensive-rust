@@ -8,21 +8,40 @@ Both `continue` and `break` can optionally take a label argument which is used
 to break out of nested loops:
 
 ```rust,editable
-fn main() {
-    let v = vec![10, 20, 30];
-    let mut iter = v.into_iter();
-    'outer: while let Some(x) = iter.next() {
-        println!("x: {x}");
-        let mut i = 0;
-        while i < x {
-            println!("x: {x}, i: {i}");
-            i += 1;
-            if i == 3 {
+fn without_labeled_loops() {
+    let mut break_outer_loop = false;
+
+    for i in [1, 2, 3] {
+        for j in [11, 22, 33] {
+            println!("{i}, {j}");
+
+            if i + j == 24 {
+                break_outer_loop = true;
+                break;
+            }
+        }
+
+        if break_outer_loop {
+            break;
+        }
+    }
+}
+
+fn with_labeled_loops() {
+    'outer: for i in [1, 2, 3] {
+        for j in [11, 22, 33] {
+            println!("{i}, {j}");
+
+            if i + j == 24 {
                 break 'outer;
             }
         }
     }
 }
-```
 
-In this case we break the outer loop after 3 iterations of the inner loop.
+fn main() {
+    without_labeled_loops();
+    println!("-----");
+    with_labeled_loops();
+}
+```
