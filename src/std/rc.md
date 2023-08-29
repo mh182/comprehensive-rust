@@ -16,13 +16,10 @@ fn main() {
 ```
 
 - See [`Arc`][2] and [`Mutex`][3] if you are in a multi-threaded context.
-- You can _downgrade_ a shared pointer into a [`Weak`][4] pointer to create cycles
-  that will get dropped.
 
 [1]: https://doc.rust-lang.org/std/rc/struct.Rc.html
-[2]: ../concurrency/shared_state/arc.md
+[2]: https://doc.rust-lang.org/std/sync/struct.Arc.html
 [3]: https://doc.rust-lang.org/std/sync/struct.Mutex.html
-[4]: https://doc.rust-lang.org/std/rc/struct.Weak.html
 
 <details>
 
@@ -31,8 +28,5 @@ fn main() {
 - `Rc::clone` is cheap: it creates a pointer to the same allocation and increases the reference count. Does not make a deep clone and can generally be ignored when looking for performance issues in code.
 - `make_mut` actually clones the inner value if necessary ("clone-on-write") and returns a mutable reference.
 - Use `Rc::strong_count` to check the reference count.
-- `Rc::downgrade` gives you a _weakly reference-counted_ object to
-  create cycles that will be dropped properly (likely in combination with
-  `RefCell`).
 
 </details>
