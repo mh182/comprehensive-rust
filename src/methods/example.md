@@ -34,8 +34,10 @@ fn main() {
     race.add_lap(70);
     race.add_lap(68);
     race.print_laps();
+
     race.add_lap(71);
     race.print_laps();
+
     race.finish();
     // race.add_lap(42);
 }

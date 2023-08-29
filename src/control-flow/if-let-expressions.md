@@ -6,6 +6,7 @@ lets you execute different code depending on whether a value matches a pattern:
 ```rust,editable
 fn main() {
     let arg = std::env::args().next();
+
     if let Some(value) = arg {
         println!("Program name: {value}");
     } else {
@@ -31,9 +32,11 @@ Rust.
    
   fn second_word_to_upper(s: &str) -> Option<String> {
       let mut it = s.split(' ');
+
       let (Some(_), Some(item)) = (it.next(), it.next()) else {
           return None;
       };
+
       Some(item.to_uppercase())
   }
   ```

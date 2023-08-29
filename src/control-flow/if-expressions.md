@@ -6,6 +6,7 @@ exactly like `if` statements in other languages:
 ```rust,editable
 fn main() {
     let mut x = 10;
+
     if x % 2 == 0 {
         x = x / 2;
     } else {
@@ -20,6 +21,7 @@ block becomes the value of the `if` expression:
 ```rust,editable
 fn main() {
     let mut x = 10;
+
     x = if x % 2 == 0 {
         x / 2
     } else {

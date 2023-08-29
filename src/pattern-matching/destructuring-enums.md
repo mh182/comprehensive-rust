@@ -19,6 +19,7 @@ fn divide_in_two(n: i32) -> Result {
 
 fn main() {
     let n = 100;
+
     match divide_in_two(n) {
         Result::Ok(half) => println!("{n} divided in two is {half}"),
         Result::Err(msg) => println!("sorry, an error happened: {msg}"),
