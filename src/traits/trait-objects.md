@@ -78,5 +78,6 @@ Memory layout after allocating `pets`:
   println!("{}", std::mem::size_of::<&dyn Pet>());
   println!("{}", std::mem::size_of::<Box<dyn Pet>>());
   ```
+  - `len` and `capacity` of a `Vec` and a pointer are of type `usize` which has 8 bytes (64 bits) on 64-bit systems.
 
 </details>
