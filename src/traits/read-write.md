@@ -21,6 +21,8 @@ fn main() -> Result<()> {
 }
 ```
 
+The question marks `?` and the usage of `Ok(())` will be explain later when talking about error handling.
+
 Similarly, [`Write`][3] lets you abstract over `u8` sinks:
 
 ```rust,editable
