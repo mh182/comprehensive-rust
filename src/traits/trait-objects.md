@@ -4,7 +4,7 @@ Trait objects allow for values of different types, for instance in a collection:
 
 ```rust,editable
 trait Pet {
-    fn name(&self) -> String;
+    fn name(&self) -> &str;
 }
 
 struct Dog {
@@ -14,14 +14,14 @@ struct Dog {
 struct Cat;
 
 impl Pet for Dog {
-    fn name(&self) -> String {
-        self.name.clone()
+    fn name(&self) -> &str {
+        &self.name
     }
 }
 
 impl Pet for Cat {
-    fn name(&self) -> String {
-        String::from("The cat") // No name, cats won't respond to it anyway.
+    fn name(&self) -> &str {
+        "The cat" // No name, cats won't respond to it anyway.
     }
 }
 
@@ -30,6 +30,7 @@ fn main() {
         Box::new(Cat),
         Box::new(Dog { name: String::from("Fido") }),
     ];
+
     for pet in pets {
         println!("Hello {}!", pet.name());
     }
@@ -50,16 +51,16 @@ Memory layout after allocating `pets`:
 :   +-----------+-------+   :     :     | |   | '-->| name: "Fido"  |           :
 :                           :     :     | |   |     +---------------+           :
 `- - - - - - - - - - - - - -'     :     | |   |                                 :
-                                  :     | |   |     +----------------------+    :   
+                                  :     | |   |     +----------------------+    :
                                   :     | |   '---->| "<Dog as Pet>::name" |    :
-                                  :     | |         +----------------------+    : 
-                                  :     | |                                     : 
-                                  :     | |   +-+                               :   
-                                  :     | '-->|\|                               :     
-                                  :     |     +-+                               :    
-                                  :     |                                       : 
-                                  :     |     +----------------------+          : 
-                                  :     '---->| "<Cat as Pet>::name" |          : 
+                                  :     | |         +----------------------+    :
+                                  :     | |                                     :
+                                  :     | |   +-+                               :
+                                  :     | '-->|\|                               :
+                                  :     |     +-+                               :
+                                  :     |                                       :
+                                  :     |     +----------------------+          :
+                                  :     '---->| "<Cat as Pet>::name" |          :
                                   :           +----------------------+          :
                                   :                                             :
                                   '- - - - - - - - - - - - - - - - - - - - - - -'
