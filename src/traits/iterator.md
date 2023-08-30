@@ -15,12 +15,14 @@ impl Iterator for Fibonacci {
         let new_next = self.curr + self.next;
         self.curr = self.next;
         self.next = new_next;
+
         Some(self.curr)
     }
 }
 
 fn main() {
     let fib = Fibonacci { curr: 0, next: 1 };
+
     for (i, n) in fib.enumerate().take(5) {
         println!("fib({i}): {n}");
     }

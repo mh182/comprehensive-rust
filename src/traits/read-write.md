@@ -16,6 +16,7 @@ fn main() -> Result<()> {
 
     let file = std::fs::File::open(std::env::current_exe()?)?;
     println!("lines in file: {}", count_lines(file));
+
     Ok(())
 }
 ```

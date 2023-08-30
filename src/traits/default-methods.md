@@ -5,6 +5,7 @@ Traits can implement behavior in terms of other trait methods:
 ```rust,editable
 trait Equals {
     fn equals(&self, other: &Self) -> bool;
+
     fn not_equals(&self, other: &Self) -> bool {
         !self.equals(other)
     }
@@ -22,6 +23,7 @@ impl Equals for Centimeter {
 fn main() {
     let a = Centimeter(10);
     let b = Centimeter(20);
+
     println!("{a:?} equals {b:?}: {}", a.equals(&b));
     println!("{a:?} not_equals {b:?}: {}", a.not_equals(&b));
 }
