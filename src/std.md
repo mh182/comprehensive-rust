@@ -9,9 +9,9 @@ The common vocabulary types include:
 - [`Option` and `Result`](std/option-result.md) types: used for optional values
   and [error handling](error-handling.md).
 
-- [`String`](std/string.md): the default string type used for owned data.
-
 - [`Vec`](std/vec.md): a standard extensible vector.
+
+- [`String`](std/string.md): the default string type used for owned data.
 
 - [`HashMap`](std/hashmap.md): a hash map type with a configurable hashing
   algorithm.

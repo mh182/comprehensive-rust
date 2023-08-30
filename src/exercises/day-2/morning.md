@@ -4,8 +4,6 @@
 
 You should do following Rustlings exercises:
 
-- `variables5`
-- `variables6`
 - `move_semantics1`
 - `move_semantics2`
 - `move_semantics3`

@@ -4,10 +4,6 @@
 
 You should do the following Rustlings exercises:
 
-- `if1`
-- `if2`
-- `if3`
-- `quiz1`
 - `options1`
 - `options2`
 - `options3`
@@ -20,10 +16,6 @@ You should do the following Rustlings exercises:
 - `hashmaps1`
 - `hashmaps2`
 - `hashmaps3`
-- `modules1`
-- `modules2`
-- `modules3`
-- `quiz2`
 
 ---
 

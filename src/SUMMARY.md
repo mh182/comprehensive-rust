@@ -20,26 +20,32 @@
   - [Compile Time Guarantees](why-rust/compile-time.md)
   - [Runtime Guarantees](why-rust/runtime.md)
   - [Modern Features](why-rust/modern.md)
-- [Basic Syntax](basic-syntax.md)
-  - [Scalar Types](basic-syntax/scalar-types.md)
-  - [Compound Types](basic-syntax/compound-types.md)
-  - [References](basic-syntax/references.md)
-    - [Dangling References](basic-syntax/references-dangling.md)
-  - [Slices](basic-syntax/slices.md)
-    - [String vs str](basic-syntax/string-slices.md)
-  - [Functions](basic-syntax/functions.md)
-    - [Early return](basic-syntax/early-return.md)
-    - [Rustdoc](basic-syntax/rustdoc.md)
-    - [Methods](basic-syntax/methods.md)
-    - [Overloading](basic-syntax/functions-interlude.md)
+- [Scalar Types](scalar-types.md)
+- [Compound Types](compound-types.md)
+- [References](references.md)
+  - [Dangling References](references/references-dangling.md)
+- [Slices](slices.md)
+  - [String vs str](slices/string-slices.md)
+- [Control Flow](control-flow.md)
+  - [Blocks](control-flow/blocks.md)
+  - [if expressions](control-flow/if-expressions.md)
+  - [for expressions](control-flow/for-expressions.md)
+  - [while expressions](control-flow/while-expressions.md)
+  - [break & continue](control-flow/break-continue.md)
+  - [loop expressions](control-flow/loop-expressions.md)
 - [Exercises](exercises/day-1/morning.md)
 
 # Day 1: Afternoon
 
-- [Variables](basic-syntax/variables.md)
-  - [Type Inference](basic-syntax/type-inference.md)
-  - [static & const](basic-syntax/static-and-const.md))
-  - [Scopes and Shadowing](basic-syntax/scopes-shadowing.md)
+- [Functions](functions.md)
+  - [Early return](functions/early-return.md)
+  - [Rustdoc](functions/rustdoc.md)
+  - [Methods](functions/methods.md)
+  - [Overloading](functions/functions-interlude.md)
+- [Variables](variables.md)
+  - [Type Inference](variables/type-inference.md)
+  - [static & const](variables/static-and-const.md))
+  - [Scopes and Shadowing](variables/scopes-shadowing.md)
 - [Memory Management](memory-management.md)
   - [Stack vs Heap](memory-management/stack-vs-heap.md)
   - [Stack Memory](memory-management/stack.md)
@@ -48,6 +54,7 @@
   - [Garbage Collection](memory-management/garbage-collection.md)
   - [Rust Memory Management](memory-management/rust.md)
   - [Comparison](memory-management/comparison.md)
+- [Exercises](exercises/day-1/afternoon.md)
 
 # Day 2: Morning
 
@@ -81,6 +88,8 @@
   - [Destructuring Structs](pattern-matching/destructuring-structs.md)
   - [Destructuring Arrays](pattern-matching/destructuring-arrays.md)
   - [Match Guards](pattern-matching/match-guards.md)
+  - [if let expressions](pattern-matching/if-let-expressions.md)
+  - [while let expressions](pattern-matching/while-let-expressions.md)
 - [Exercises](exercises/day-2/afternoon.md)
   - [Health Statistics](exercises/day-2/health-statistics.md)
   - [Points and Polygons](exercises/day-2/points-polygons.md)
@@ -89,16 +98,6 @@
 
 ---
 
-- [Control Flow](control-flow.md)
-  - [Blocks](control-flow/blocks.md)
-  - [if expressions](control-flow/if-expressions.md)
-  - [if let expressions](control-flow/if-let-expressions.md)
-  - [while expressions](control-flow/while-expressions.md)
-  - [while let expressions](control-flow/while-let-expressions.md)
-  - [for expressions](control-flow/for-expressions.md)
-  - [loop expressions](control-flow/loop-expressions.md)
-  - [match expressions](control-flow/match-expressions.md)
-  - [break & continue](control-flow/break-continue.md)
 - [Standard Library](std.md)
   - [Option and Result](std/option-result.md)
   - [Vec](std/vec.md)
@@ -108,20 +107,26 @@
     - [Recursive Data Types](std/box-recursive.md)
     - [Niche Optimization](std/box-niche.md)
   - [Rc](std/rc.md)
-- [Modules](modules.md)
-  - [Visibility](modules/visibility.md)
-  - [Paths](modules/paths.md)
-  - [Filesystem Hierarchy](modules/filesystem.md)
 - [Exercises](exercises/day-3/morning.md)
   - [Luhn Algorithm](exercises/day-3/luhn.md)
   - [Strings and Iterators](exercises/day-3/strings-iterators.md)
 
 # Day 3: Afternoon
 
+- [Modules](modules.md)
+  - [Visibility](modules/visibility.md)
+  - [Paths](modules/paths.md)
+  - [Filesystem Hierarchy](modules/filesystem.md)
 - [Generics](generics.md)
   - [Generic Data Types](generics/data-types.md)
   - [Generic Methods](generics/methods.md)
   - [Monomorphization](generics/monomorphization.md)
+- [Exercises](exercises/day-3/afternoon.md)
+
+# Day 4: Morning
+
+---
+
 - [Traits](traits.md)
   - [Trait Objects](traits/trait-objects.md)
   - [Deriving Traits](traits/deriving-traits.md)
@@ -137,13 +142,10 @@
   - [Default](traits/default.md)
   - [Operators: Add, Mul, ...](traits/operators.md)
   - [Closures: Fn, FnMut, FnOnce](traits/closures.md)
-- [Exercises](exercises/day-3/afternoon.md)
-  - [A Simple GUI Library](exercises/day-3/simple-gui.md)
+- [Exercises](exercises/day-4/morning.md)
+  - [A Simple GUI Library](exercises/day-4/simple-gui.md)
 
-<!--
-# Day 4: Morning
-
----
+# Day 4: Afternoon
 
 - [Error Handling](error-handling.md)
   - [Panics](error-handling/panics.md)
@@ -164,14 +166,16 @@
 - [Unsafe Rust](unsafe.md)
   - [Dereferencing Raw Pointers](unsafe/raw-pointers.md)
   - [Mutable Static Variables](unsafe/mutable-static-variables.md)
-  - [Unions](unsafe/unions.md)
   - [Calling Unsafe Functions](unsafe/calling-unsafe-functions.md)
     - [Writing Unsafe Functions](unsafe/writing-unsafe-functions.md)
     - [Extern Functions](unsafe/extern-functions.md)
   - [Implementing Unsafe Traits](unsafe/unsafe-traits.md)
-- [Exercises](exercises/day-4/morning.md)
+- [Exercises](exercises/day-4/afternoon.md)
 
-# Day 4: Afternoon
+<!--
+# Day 5: Morning
+
+---
 
 - [Welcome](concurrency.md)
 - [Threads](concurrency/threads.md)

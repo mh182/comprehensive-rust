@@ -28,24 +28,11 @@ fn main() {
 
 If the last expression ends with `;`, then the resulting value and type is `()`.
 
-The same rule is used for functions: the value of the function body is the
-return value:
-
-```rust,editable
-fn double(x: i32) -> i32 {
-    x + x
-}
-
-fn main() {
-    println!("doubled: {}", double(7));
-}
-```
-
 <details>
 
 Key Points:
 
 - The point of this slide is to show that blocks have a type and value in Rust.
-- You can show how the value of the block changes by changing the last line in the block. For instance, adding/removing a semicolon or using a `return`.
+- You can show how the value of the block changes by changing the last line in the block. For instance, adding/removing a semicolon.
 
 </details>

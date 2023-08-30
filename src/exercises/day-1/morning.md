@@ -32,11 +32,9 @@ You should do following Rustlings exercises:
 - `primitive_types4`
 - `primitive_types5`
 - `primitive_types6`
-- `functions1`
-- `functions2`
-- `functions3`
-- `functions4`
-- `functions5`
+- `if1`
+- `if2`
+- `if3`
 
 `rustlings watch` will guide you through these exercises in the same order.
 But you should stop after the last exercise listed above.
