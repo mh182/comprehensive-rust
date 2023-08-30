@@ -45,7 +45,7 @@ JavaScript, then you will be able to follow along just fine too.
 
 ## Credits
 
-This script is **forked from the original [Comprehensive Rust](https://google.github.io/comprehensive-rust/) course** which is developed by the Android team at Google.
+This script is **[forked](https://codeberg.org/mo8it/comprehensive-rust) from the original [Comprehensive Rust](https://google.github.io/comprehensive-rust/) course** which is developed by the Android team at Google.
 Many thanks to the original authors 🥰
 
 [More credits](credits.md)
