@@ -15,7 +15,11 @@ struct Player {
 fn main() {
     let p1 = Player::default();
     let p2 = p1.clone();
-    println!("Is {:?}\nequal to {:?}?\nThe answer is {}!", &p1, &p2,
-             if p1 == p2 { "yes" } else { "no" });
+
+    if p1 == p2 {
+        println!("{p1:?}\nis qual to\n{p2:?}");
+    } else {
+        println!("{p1:?}\nis NOT equal to\n{p2:?}");
+    }
 }
 ```
