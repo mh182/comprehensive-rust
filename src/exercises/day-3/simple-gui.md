@@ -1,5 +1,8 @@
 # A Simple GUI Library
 
+> Try this exercise **only if you have time left**.
+> The Rustlings exercises are more important!
+
 Let us design a classical GUI library using our new knowledge of traits and
 trait objects.
 
