@@ -8,6 +8,9 @@ You should do the following Rustlings exercises:
 - `errors4`
 - `errors5`
 - `errors6`
+- `iterators3`
+- `iterators4`
+- `iterators5`
 - `quiz3`
 - `tests1`
 - `tests2`

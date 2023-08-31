@@ -11,6 +11,3 @@ You should do the following Rustlings exercises:
 - `traits5`
 - `iterators1`
 - `iterators2`
-- `iterators3`
-- `iterators4`
-- `iterators5`
