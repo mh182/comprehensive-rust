@@ -184,7 +184,7 @@
   - [Example](concurrency/shared_state/example.md)
 - [Exercises](exercises/day-5/morning.md)
 
-# Day 5: Morning
+# Day 5: Afternoon
 
 ---
 
