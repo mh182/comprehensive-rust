@@ -164,7 +164,6 @@
   - [Implementing Unsafe Traits](unsafe/unsafe-traits.md)
 - [Exercises](exercises/day-4/afternoon.md)
 
-<!--
 # Day 5: Morning
 
 ---
@@ -183,7 +182,7 @@
   - [Arc](concurrency/shared_state/arc.md)
   - [Mutex](concurrency/shared_state/mutex.md)
   - [Example](concurrency/shared_state/example.md)
-- [Exercises](exercises/concurrency/morning.md)
+- [Exercises](exercises/day-5/morning.md)
 
 # Day 5: Morning
 
@@ -204,8 +203,7 @@
   - [Pin](async/pitfalls/pin.md)
   - [Async Traits](async/pitfalls/async-traits.md)
   - [Cancellation](async/pitfalls/cancellation.md)
-- [Exercises](exercises/concurrency/afternoon.md)
--->
+- [Exercises](exercises/day-5/afternoon.md)
 
 # Final Words
 
