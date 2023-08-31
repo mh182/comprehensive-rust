@@ -6,9 +6,6 @@ smoothly because they both use the same `String` type.
 
 The common vocabulary types include:
 
-- [`Option` and `Result`](std/option-result.md) types: used for optional values
-  and [error handling](error-handling.md).
-
 - [`Vec`](std/vec.md): a standard extensible vector.
 
 - [`String`](std/string.md): the default string type used for owned data.

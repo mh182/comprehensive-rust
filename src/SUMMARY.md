@@ -80,6 +80,7 @@
   - [Constructors](structs/constructors.md)
 - [Enums](enums.md)
   - [Variant Payloads](enums/variant-payloads.md)
+  - [Option and Result](enums/option-result.md)
 - [Methods](methods.md)
   - [Method Receiver](methods/receiver.md)
   - [Example](methods/example.md)
@@ -97,7 +98,6 @@
 ---
 
 - [Standard Library](std.md)
-  - [Option and Result](std/option-result.md)
   - [Vec](std/vec.md)
   - [String](std/string.md)
   - [HashMap](std/hashmap.md)
