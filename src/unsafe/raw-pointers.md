@@ -24,9 +24,7 @@ fn main() {
 
 <details>
 
-It is good practice (and required by the Android Rust style guide) to write a comment for each
-`unsafe` block explaining how the code inside it satisfies the safety requirements of the unsafe
-operations it is doing.
+It is good practice to write a comment for each `unsafe` block explaining how the code inside it satisfies the safety requirements of the unsafe operations it is doing.
 
 In the case of pointer dereferences, this means that the pointers must be
 [_valid_](https://doc.rust-lang.org/std/ptr/index.html#safety), i.e.:
