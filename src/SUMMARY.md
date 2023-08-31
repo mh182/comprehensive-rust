@@ -168,7 +168,7 @@
 
 ---
 
-- [Welcome](concurrency.md)
+- [Concurrency](concurrency.md)
 - [Threads](concurrency/threads.md)
   - [Scoped Threads](concurrency/scoped-threads.md)
 - [Channels](concurrency/channels.md)
