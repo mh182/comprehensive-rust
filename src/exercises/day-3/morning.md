@@ -13,3 +13,5 @@ You should do the following Rustlings exercises:
 - `hashmaps1`
 - `hashmaps2`
 - `hashmaps3`
+- `box1`
+- `rc1`

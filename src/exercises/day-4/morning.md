@@ -4,8 +4,6 @@
 
 You should do the following Rustlings exercises:
 
-- `box1`
-- `rc1`
 - `traits1`
 - `traits2`
 - `traits3`
