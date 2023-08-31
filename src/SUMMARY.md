@@ -91,8 +91,6 @@
   - [if let expressions](pattern-matching/if-let-expressions.md)
   - [while let expressions](pattern-matching/while-let-expressions.md)
 - [Exercises](exercises/day-2/afternoon.md)
-  - [Health Statistics](exercises/day-2/health-statistics.md)
-  - [Points and Polygons](exercises/day-2/points-polygons.md)
 
 # Day 3: Morning
 
@@ -108,8 +106,6 @@
     - [Niche Optimization](std/box-niche.md)
   - [Rc](std/rc.md)
 - [Exercises](exercises/day-3/morning.md)
-  - [Luhn Algorithm](exercises/day-3/luhn.md)
-  - [Strings and Iterators](exercises/day-3/strings-iterators.md)
 
 # Day 3: Afternoon
 
@@ -143,7 +139,6 @@
   - [Operators: Add, Mul, ...](traits/operators.md)
   - [Closures: Fn, FnMut, FnOnce](traits/closures.md)
 - [Exercises](exercises/day-4/morning.md)
-  - [A Simple GUI Library](exercises/day-4/simple-gui.md)
 
 # Day 4: Afternoon
 
@@ -189,8 +184,6 @@
   - [Mutex](concurrency/shared_state/mutex.md)
   - [Example](concurrency/shared_state/example.md)
 - [Exercises](exercises/concurrency/morning.md)
-  - [Dining Philosophers](exercises/concurrency/dining-philosophers.md)
-  - [Multi-threaded Link Checker](exercises/concurrency/link-checker.md)
 
 # Day 5: Morning
 
@@ -212,8 +205,6 @@
   - [Async Traits](async/pitfalls/async-traits.md)
   - [Cancellation](async/pitfalls/cancellation.md)
 - [Exercises](exercises/concurrency/afternoon.md)
-  - [Dining Philosophers](exercises/concurrency/dining-philosophers-async.md)
-  - [Broadcast Chat Application](exercises/concurrency/chat-app.md)
 -->
 
 # Final Words
