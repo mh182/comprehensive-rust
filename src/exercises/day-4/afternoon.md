@@ -13,3 +13,7 @@ You should do the following Rustlings exercises:
 - `tests2`
 - `tests3`
 - `tests4`
+- `using_as`
+- `from_into`
+- `from_str`
+- `try_from_into`
