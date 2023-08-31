@@ -4,9 +4,6 @@
 
 You should do the following Rustlings exercises:
 
-- `options1`
-- `options2`
-- `options3`
 - `vecs1`
 - `vecs2`
 - `strings1`

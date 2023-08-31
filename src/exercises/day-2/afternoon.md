@@ -8,3 +8,6 @@ You should do the following Rustlings exercises:
 - `enums1`
 - `enums2`
 - `enums3`
+- `options1`
+- `options2`
+- `options3`
