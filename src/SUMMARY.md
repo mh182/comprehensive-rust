@@ -166,7 +166,6 @@
   - [Mutable Static Variables](unsafe/mutable-static-variables.md)
   - [Calling Unsafe Functions](unsafe/calling-unsafe-functions.md)
     - [Writing Unsafe Functions](unsafe/writing-unsafe-functions.md)
-    - [Extern Functions](unsafe/extern-functions.md)
   - [Implementing Unsafe Traits](unsafe/unsafe-traits.md)
 - [Exercises](exercises/day-4/afternoon.md)
 

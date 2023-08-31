@@ -15,7 +15,7 @@ Unsafe Rust gives you access to five new capabilities:
 
 - Dereference raw pointers.
 - Access or modify mutable static variables.
-- Call `unsafe` functions, including `extern` functions.
+- Call `unsafe` functions, including `extern` functions (from other languages).
 - Implement `unsafe` traits.
 
 We will briefly cover unsafe capabilities next. For full details, please see
