@@ -43,6 +43,6 @@ fn main() {
 
 - `Option` and `Result` are widely used not just in the standard library.
 - `Option<&T>` has zero space overhead compared to `&T`.
-- `Result` is the standard type to implement error handling as we will see on Day 3.
+- `Result` is the standard type to implement error handling as we will later.
 
 </details>
