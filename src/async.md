@@ -11,8 +11,8 @@ Rust's asynchronous operation is based on "futures", which represent work that
 may be completed in the future. Futures are "polled" until they signal that
 they are complete.
 
-Futures are polled by an async runtime, and several different runtimes are
-available.
+Futures are polled by an async runtime.
+[Tokio](https://tokio.rs/) is the most popular one.
 
 ## Comparisons
 
