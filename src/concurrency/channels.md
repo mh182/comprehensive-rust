@@ -1,5 +1,7 @@
 # Channels
 
+> Channel functionality is limited in the standard library. For _multiple-producer **multiple**-consumer_ channels and other concurrent utilities, check out the [`crossbeam`](https://docs.rs/crossbeam/latest/crossbeam/index.html) crate.
+
 Rust channels have two parts: a `Sender<T>` and a `Receiver<T>`. The two parts
 are connected via the channel, but you only see the end-points.
 
