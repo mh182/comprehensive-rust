@@ -1,9 +1,15 @@
 # Thanks!
 
-_Thank you for taking Comprehensive Rust 🦀!_ We hope you enjoyed it and that it
-was useful.
+Thank you for taking this course and welcome to the lovely Rust community, fellow Rustacean 🦀❤️
 
-We've had a lot of fun putting the course together. The course is not perfect,
-so if you spotted any mistakes or have ideas for improvements, please get in
-[contact with us on GitHub](https://github.com/google/comprehensive-rust/discussions). We would love
-to hear from you.
+```
+ -------------
+< You did it! >
+ -------------
+        \
+         \
+            _~^~^~_
+        \) /  o o  \ (/
+          '_   U   _'
+          / '-----' \
+```
