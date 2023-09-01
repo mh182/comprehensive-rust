@@ -30,10 +30,9 @@ implementation.
 
 - `Mutex` in Rust looks like a collection with just one element - the protected data.
   - It is not possible to forget to acquire the mutex before accessing the protected data.
-- You can get an `&mut T` from an `&Mutex<T>` by taking the lock. The `MutexGuard` ensures that the
+- You can get a `&mut T` from a `&Mutex<T>` by taking the lock. The `MutexGuard` ensures that the
   `&mut T` doesn't outlive the lock being held.
-- `Mutex<T>` implements both `Send` and `Sync` iff (if and only if) `T` implements `Send`.
-- A read-write lock counterpart - `RwLock`.
+- `Mutex<T>` implements both `Send` and `Sync` if and only if `T` implements `Send`.
 - Why does `lock()` return a `Result`?
   - If the thread that held the `Mutex` panicked, the `Mutex` becomes "poisoned" to signal that
     the data it protected might be in an inconsistent state. Calling `lock()` on a poisoned mutex

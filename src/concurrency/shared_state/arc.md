@@ -30,13 +30,12 @@ fn main() {
 
 <details>
 
-- `Arc` stands for "Atomic Reference Counted", a thread safe version of `Rc` that uses atomic
-  operations.
+- `Arc` stands for "Atomic Reference Counted", a thread safe version of `Rc` that uses _atomic
+  operations_.
 - `Arc<T>` implements `Clone` whether or not `T` does. It implements `Send` and `Sync` if
   and only if `T` implements them both.
 - `Arc::clone()` has the cost of atomic operations that get executed, but after that the use of the
   `T` is free.
 - Beware of reference cycles, `Arc` does not use a garbage collector to detect them.
-  - `std::sync::Weak` can help.
 
 </details>
