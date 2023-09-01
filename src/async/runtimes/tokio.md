@@ -29,7 +29,7 @@ async fn main() {
 
 <details>
 
-- With the `tokio::main` macro we can now make `main` async.
+- With the `tokio::main` macro, we can now make `main` async.
 
 - The `spawn` function creates a new, concurrent "task".
 
