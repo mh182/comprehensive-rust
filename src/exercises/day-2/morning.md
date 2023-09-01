@@ -2,7 +2,7 @@
 
 {{#include ../morning_hint.md}}
 
-You should do following Rustlings exercises:
+You should do the following Rustlings exercises:
 
 - `move_semantics1`
 - `move_semantics2`

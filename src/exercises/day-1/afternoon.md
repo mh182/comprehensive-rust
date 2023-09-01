@@ -1,6 +1,6 @@
 # Day 1: Afternoon Exercises
 
-You should do following Rustlings exercises:
+You should do the following Rustlings exercises:
 
 - `functions1`
 - `functions2`

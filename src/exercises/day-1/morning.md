@@ -18,7 +18,7 @@ Before starting with the exercises, you have to follow the following steps:
 - Open the directory `collective-rustlings` of the cloned repository in VS-Code.
 - Open a terminal in VS-Code and run the command `rustlings watch` in it.
 
-You should do following Rustlings exercises:
+You should do the following Rustlings exercises:
 
 - `intro1`
 - `intro2`
