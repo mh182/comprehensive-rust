@@ -195,6 +195,7 @@
 - [Pitfalls](async/pitfalls.md)
   - [Blocking the Executor](async/pitfalls/blocking-executor.md)
   - [Async Traits](async/pitfalls/async-traits.md)
+- [Web Server](web-server.md)
 - [Exercises](exercises/day-5/afternoon.md)
 
 # Final Words
