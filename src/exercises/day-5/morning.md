@@ -8,6 +8,3 @@ You should do following Rustlings exercises:
 - `threads1`
 - `threads2`
 - `threads3`
-- `clippy1`
-- `clippy2`
-- `clippy3`
