@@ -17,7 +17,7 @@ The generic types are typically `Send + Sync` when the type parameters are
 ## `Send + !Sync`
 
 These types can be moved to other threads, but they're not thread-safe.
-Typically because of interior mutability:
+Typically because of [interior mutability](https://doc.rust-lang.org/reference/interior-mutability.html):
 
 - `mpsc::Sender<T>`
 - `mpsc::Receiver<T>`
