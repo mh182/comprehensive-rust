@@ -8,16 +8,20 @@ use std::sync::Arc;
 
 fn main() {
     let v = Arc::new(vec![10, 20, 30]);
-    let mut handles = Vec::new();
-    for _ in 1..5 {
+
+    let handles = (0..5).map(|_| {
         let v = Arc::clone(&v);
-        handles.push(thread::spawn(move || {
+
+        thread::spawn(move || {
             let thread_id = thread::current().id();
             println!("{thread_id:?}: {v:?}");
-        }));
+        })
+    }).collect::<Vec<_>>();
+
+    for handle in handles {
+        handle.join().unwrap();
     }
 
-    handles.into_iter().for_each(|h| h.join().unwrap());
     println!("v: {v:?}");
 }
 ```
