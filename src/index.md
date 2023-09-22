@@ -17,13 +17,6 @@ mutexes) and async/await concurrency (cooperative multitasking using
 futures).
 
 On the last day, we will learn how to use Rust to run a [web server](https://mo8it.com/blog/getting-started-with-rust-backends/).
-You will also vote for a topic on the first day to be covered in the last day.
-Possible topics are:
-
-- Graphical user interfaces (GUI) using [`egui`](https://www.egui.rs/)
-- Command line interfaces (CLI) using [`clap`](https://docs.rs/clap/latest/clap/)
-- Terminal user interafaces (TUI) using [`ratatui`](https://github.com/ratatui-org/ratatui)
-- Your suggestion!
 
 ## Disclaimer
 
