@@ -2,7 +2,7 @@
 
 Thank you for taking this course and welcome to the lovely Rust community, fellow Rustacean 🦀❤️
 
-```
+```text
  -------------
 < You did it! >
  -------------
