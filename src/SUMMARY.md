@@ -6,8 +6,8 @@
 
 - [Using Cargo](cargo.md)
   - [Rust Ecosystem](cargo/rust-ecosystem.md)
-  - [Code Samples](cargo/code-samples.md)
   - [Running Cargo Locally](cargo/running-locally.md)
+  - [Code Samples](cargo/code-samples.md)
 
 # Day 1: Morning
 
@@ -23,6 +23,8 @@
 - [Scalar Types](scalar-types.md)
 - [Compound Types](compound-types.md)
 - [References](references.md)
+  - [Shared References](references/shared-references.md)
+  - [Exclusive References](references/exclusive-references.md)
   - [Dangling References](references/references-dangling.md)
 - [Slices](slices.md)
   - [String vs str](slices/string-slices.md)

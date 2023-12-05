@@ -30,9 +30,6 @@ inputs.
 
 Key points:
 
-- Explain that all variables are statically typed. Try removing `i32` to trigger
-  type inference. Try with `i8` instead and trigger a runtime integer overflow.
-
 - Change `let mut x` to `let x`, discuss the compiler error.
 
 - Show how `print!` gives a compilation error if the arguments don't match the

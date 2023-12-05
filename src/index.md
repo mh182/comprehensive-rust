@@ -2,12 +2,13 @@
 
 This Rust course covers the full spectrum of Rust, from basic syntax to advanced topics like generics and error handling.
 
-The goal of the course is to teach you Rust. We assume you don't know anything
-about Rust and hope to:
+The goal of the course is to teach you Rust. We assume you don't know anything about Rust and hope to:
 
 - Give you a comprehensive understanding of the Rust syntax and language.
 - Enable you to modify existing programs and write new programs in Rust.
 - Show you common Rust idioms.
+
+> Note: My aim isn't to cover the entire course today. Instead, the objective is to create an environment where individuals can engage in self-study to learn Rust."
 
 We call the first three course days Rust Fundamentals.
 
@@ -38,8 +39,8 @@ JavaScript, then you will be able to follow along just fine too.
 
 ## Credits
 
-This script is **[forked](https://codeberg.org/mo8it/comprehensive-rust) from the original [Comprehensive Rust](https://google.github.io/comprehensive-rust/) course** which is developed by the Android team at Google.
-Many thanks to the original authors 🥰
+This script is **[forked](https://github.com/mh182/comprehensive-rust.git)** from [Comprehensive Rust by mo8it](https://codeberg.org/mo8it/comprehensive-rust), an adaption of the **original [Comprehensive Rust](https://google.github.io/comprehensive-rust/) course** which is developed by the Android team at Google.
+Many thanks to mo8it and the original authors at Google 🥰
 
 [More credits](credits.md)
 

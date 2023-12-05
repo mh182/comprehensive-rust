@@ -7,10 +7,10 @@ writing, the latest stable Rust release has these version numbers:
 
 ```shell
 $ rustc --version
-rustc 1.72.0 (5680fa18f 2023-08-23)
+rustc 1.74.0 (79e9716c9 2023-11-13)
 
 $ cargo --version
-cargo 1.72.0 (103a7ff2e 2023-08-15)
+cargo 1.74.0 (ecb9851af 2023-10-18)
 ```
 
 You can use any later version too since Rust maintains backwards compatibility.
@@ -69,10 +69,18 @@ of the examples in this training:
 
 [1]: https://doc.rust-lang.org/book/ch01-01-installation.html
 
-<details>
+   <details>
 
 Try to encourage the class participants to install Cargo and use a
 local editor. It will make their life easier since they will have a
 normal development environment.
+
+## Visual Studio Code as Rust IDE
+
+- Install `Visual Studio Code` from the Frequentis Software Center
+- Start Visual Studio Code
+- Open the Extension view (`Ctrl+Shift+X`) or clicking the extension icon on the Activity Bar on the side vo VS Code.
+- Search for the extension `rust-analyzer` and install it
+- Search for the extension `CodeLLDB` and install it
 
 </details>

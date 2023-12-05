@@ -7,8 +7,6 @@ course developed by the Android team. The course covers all aspects of Rust,
 from basic syntax to generics and error handling. It also includes deep dives on
 concurrency.
 
-Read the course at **https://comprehensive-rust.mo8it.com**.
-
 ## Course Format and Target Audience
 
 The course is used internally at Google when teaching Rust to experienced
@@ -30,6 +28,12 @@ The course is built using a few tools:
 - [mdbook-svgbob](https://github.com/boozook/mdbook-svgbob)
 
 First clone the repository.
+
+```shell
+git clone https://github.com/mh182/comprehensive-rust.git 
+cd comprehensive-rust
+```
+
 Then install these tools with:
 
 ```shell

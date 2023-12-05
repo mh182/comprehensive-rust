@@ -5,6 +5,18 @@ used in the Rust ecosystem to build and run Rust applications. Here we want to
 give a brief overview of what Cargo is and how it fits into the wider ecosystem
 and how it fits into this training.
 
+## Installing Visual Studio Prerequisites
+
+**Pre-condition**: you requested Helpdesk to add the packages `Git for Windows`, `Visual Studio 2022 Community` and `Visual Studio Code` to your software repository.
+
+To compile programs into an exe file, Rust requires a linker, libraries and Windows API import libraries. For `msvc` targets these can be acquired through Visual Studio.
+
+Open the Frequentis Software Center and install `Visual Studio 2022 Community`. Start the installer and use the "Workload" tab to select the "Desktop Development with C++". The required components are (for details see [MSVC prerequisites](https://rust-lang.github.io/rustup/installation/windows-msvc.html)): 
+- MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)
+- Windows 11 SDK (10.0.22621.0)
+
+Note that the specific version of the Windows SDK doesn't matter for pure Rust code.
+
 ## Installation
 
 > **Please follow the instructions on <https://rustup.rs/>.**
