@@ -9,7 +9,7 @@ Before starting with the exercises, you have to follow the following steps:
 - [Install VS-Code](https://code.visualstudio.com/) (unless you want to use your own editor with support for the language server [`rust-analyzer`](https://rust-analyzer.github.io/))
   - [Install the `rust-analyzer` plugin](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
 - Install Git if not already installed on your system.
-- [Follow the instructions in the README](https://github.com/rust-lang/rustlings#windows) to clone the `rustlings` repository, install the program, register yourself and enable the `rust-analyzer` support.
+- [Follow the instructions in the README](https://github.com/rust-lang/rustlings#windows) to clone the `rustlings` repository, install the program, and enable the `rust-analyzer` support.
 - Open the directory `rustlings` of the cloned repository in VS-Code.
 - Open a terminal in VS-Code and run the command `rustlings watch` in it.
 
